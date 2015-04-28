@@ -1,5 +1,4 @@
-#TaskExecutor
-####Part of the Kermit project 
+#Kermit
 
 ##Todo
 - Use **Postgre** for SQL
