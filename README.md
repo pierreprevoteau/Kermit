@@ -16,3 +16,5 @@
 - Use **Net Sftp** for pull and push ftp
 - Use **Wash Out** for webservices
 - Use **Savon** for webservices
+- Use **Mediainfo** for metadata
+- Use **Ffmpeg** for transcode
