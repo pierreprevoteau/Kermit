@@ -20,4 +20,4 @@ production:
   database: kermit_production
   pool: 5
   username: postgres
-  password: 
+  password: postgres
