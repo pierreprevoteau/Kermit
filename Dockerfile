@@ -7,6 +7,8 @@ RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --force-yes libpq-dev
+    psql --command "CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';" &&\
+    createdb -O kermit_production postgres
 
 #(required) Install Rails App
 ADD Gemfile /app/Gemfile
