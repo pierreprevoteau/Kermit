@@ -1,5 +1,5 @@
 #Kermit
-
+[![Build Status](https://travis-ci.org/peterthecoon/Kermit.svg?branch=master)](https://travis-ci.org/peterthecoon/Kermit)
 ##Todo
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
