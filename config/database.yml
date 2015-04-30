@@ -19,7 +19,7 @@ production:
   encoding: utf8
   database: kermit_production
   pool: 5
-  username: postgres
-  password: postgres
-  host: localhost
-  port: 5432 
+  username: <%= ENV["DB_CONNECT_USERNAME"] %>
+  password: <%= ENV["DB_CONNECT_PASSWORD"] %>
+  host: <%= ENV["DB_CONNECT_HOST"] %>
+  port: <%= ENV["DB_CONNECT_PORT"] %> 
