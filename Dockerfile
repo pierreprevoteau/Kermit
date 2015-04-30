@@ -1,6 +1,6 @@
 # Dockerfile
 FROM peterthecoon/rails-prod:latest
-MAINTAINER seapy(iamseapy@gmail.com)
+MAINTAINER Pierre Prevoteau <pierre.prevoteau@askida.fr>
 
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/apt/sources.list.d/pgdg.list && \
     apt-get update && \
