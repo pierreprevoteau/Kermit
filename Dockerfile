@@ -1,5 +1,5 @@
 # Dockerfile
-FROM seapy/rails-nginx-unicorn-pro:v1.0-ruby2.1.2-nginx1.6.0
+FROM peterthecoon/rails-prod:latest
 MAINTAINER seapy(iamseapy@gmail.com)
 
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" > /etc/apt/sources.list.d/pgdg.list && \
