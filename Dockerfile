@@ -20,4 +20,4 @@ ADD . /app
 
 EXPOSE 80
 
-CMD ["/usr/src/app", "resque", "work"]
+CMD ["/app", "resque", "work"]
