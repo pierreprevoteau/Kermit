@@ -3,16 +3,20 @@ development:
   encoding: utf8
   database: kermit_development
   pool: 5
-  username: postgres
-  password: 
+  username: <%= ENV["DB_CONNECT_USERNAME"] %>
+  password: <%= ENV["DB_CONNECT_PASSWORD"] %>
+  host: <%= ENV["DB_CONNECT_HOST"] %>
+  port: <%= ENV["DB_CONNECT_PORT"] %> 
 
 test:
   adapter: postgresql
   encoding: utf8
   database: kermit_test
   pool: 5
-  username: postgres
-  password: 
+  username: <%= ENV["DB_CONNECT_USERNAME"] %>
+  password: <%= ENV["DB_CONNECT_PASSWORD"] %>
+  host: <%= ENV["DB_CONNECT_HOST"] %>
+  port: <%= ENV["DB_CONNECT_PORT"] %> 
 
 production:
   adapter: postgresql
