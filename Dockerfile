@@ -19,3 +19,5 @@ RUN bundle install
 ADD . /app
 
 EXPOSE 80
+
+CMD sleep 5 && resque work
