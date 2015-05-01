@@ -11,6 +11,7 @@ ENV DB_CONNECT_USERNAME postgres
 ENV DB_CONNECT_PASSWORD postgres
 ENV DB_CONNECT_HOST localhost
 ENV DB_CONNECT_PORT 5432
+ENV RAILS_RESQUE_REDIS localhost:6712
 
 ADD Gemfile /app/Gemfile
 ADD Gemfile.lock /app/Gemfile.lock
