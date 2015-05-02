@@ -12,6 +12,8 @@ ENV DB_CONNECT_PASSWORD postgres
 ENV DB_CONNECT_HOST localhost
 ENV DB_CONNECT_PORT 5432
 ENV RAILS_RESQUE_REDIS localhost:6712
+ENV RESQUE_WEB_HTTP_BASIC_AUTH_USER kermit
+ENV RESQUE_WEB_HTTP_BASIC_AUTH_PASSWORD kermit
 
 ADD Gemfile /app/Gemfile
 ADD Gemfile.lock /app/Gemfile.lock
@@ -20,4 +22,4 @@ ADD . /app
 
 EXPOSE 80
 
-CMD ["/app", "resque", "work"]
+ENTRYPOINT ["./config/worker.sh"]
