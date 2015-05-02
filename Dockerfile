@@ -22,4 +22,4 @@ ADD . /app
 
 EXPOSE 80
 
-ENTRYPOINT ["./config/worker.sh"]
+ENTRYPOINT ./config/worker.sh
