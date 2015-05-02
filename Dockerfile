@@ -22,4 +22,5 @@ ADD . /app
 
 EXPOSE 80
 
-ENTRYPOINT ./config/worker.sh
+ADD worker.sh /app/config/worker.sh
+ENTRYPOINT /app/config/worker.sh
