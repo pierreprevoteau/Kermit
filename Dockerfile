@@ -22,4 +22,4 @@ ADD . /app
 
 EXPOSE 80
 
-ADD worker.sh /app/config/worker.sh
+CMD ["/app/bin/rails", "resque", "work", "--queues=*"]
