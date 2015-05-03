@@ -22,4 +22,4 @@ ADD . /app
 
 EXPOSE 80
 
-CMD ["/app/bin/rails", "resque", "work", "--queues=*"]
+CMD ["/app/bin/resque", "resque", "work", "--queues=*"]
