@@ -76,4 +76,11 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  Resque.configure do |config|
+
+  	config.redis = 'redis://192.168.99.100:32768'
+
+  end
+	
 end
