@@ -1,3 +1,0 @@
-development: <%= ENV['RAILS_RESQUE_REDIS'] %>:0
-test: <%= ENV['RAILS_RESQUE_REDIS'] %>:0
-production: <%= ENV['RAILS_RESQUE_REDIS'] %>:0
