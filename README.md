@@ -1,6 +1,6 @@
 #Kermit
 [![Build Status](https://travis-ci.org/peterthecoon/Kermit.svg?branch=master)](https://travis-ci.org/peterthecoon/Kermit) [![Dependency Status](https://gemnasium.com/peterthecoon/Kermit.svg)](https://gemnasium.com/peterthecoon/Kermit)
-##Todo
+##To-do
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
 - Use **Devise** for administration loggin
