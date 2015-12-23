@@ -21,13 +21,13 @@
     <% @media.each do |medium| %>
       <tr>
         <td><%= medium.title %></td>
-        <td><%= medium.sort_id %></td>
-        <td><%= medium.state_id %></td>
-        <td><%= medium.folder_id %></td>
+        <td><%= medium.sort.title %></td>
+        <td><%= medium.state.title %></td>
+        <td><%= medium.folder.title %></td>
         <td><%= medium.duration %></td>
         <td><%= medium.created_by %></td>
         <td><%= medium.updated_by %></td>
-        <td><%= medium.tag %></td>
+        <td><%= medium.tag.title %></td>
         <td><%= link_to 'Show', medium %></td>
         <td><%= link_to 'Edit', edit_medium_path(medium) %></td>
         <td><%= link_to 'Destroy', medium, method: :delete, data: { confirm: 'Are you sure?' } %></td>

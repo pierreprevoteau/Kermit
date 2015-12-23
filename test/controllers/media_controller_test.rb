@@ -18,7 +18,7 @@ class MediaControllerTest < ActionController::TestCase
 
   test "should create medium" do
     assert_difference('Medium.count') do
-      post :create, medium: { created_by: @medium.created_by, duration: @medium.duration, folder_id: @medium.folder_id, sort_id: @medium.sort_id, state_id: @medium.state_id, tag: @medium.tag, title: @medium.title, updated_by: @medium.updated_by }
+      post :create, medium: { created_by: @medium.created_by, duration: @medium.duration, folder_id: @medium.folder_id, sort_id: @medium.sort_id, state_id: @medium.state_id, tag_id: @medium.tag_id, title: @medium.title, updated_by: @medium.updated_by }
     end
 
     assert_redirected_to medium_path(assigns(:medium))
@@ -35,7 +35,7 @@ class MediaControllerTest < ActionController::TestCase
   end
 
   test "should update medium" do
-    patch :update, id: @medium, medium: { created_by: @medium.created_by, duration: @medium.duration, folder_id: @medium.folder_id, sort_id: @medium.sort_id, state_id: @medium.state_id, tag: @medium.tag, title: @medium.title, updated_by: @medium.updated_by }
+    patch :update, id: @medium, medium: { created_by: @medium.created_by, duration: @medium.duration, folder_id: @medium.folder_id, sort_id: @medium.sort_id, state_id: @medium.state_id, tag_id: @medium.tag_id, title: @medium.title, updated_by: @medium.updated_by }
     assert_redirected_to medium_path(assigns(:medium))
   end
 

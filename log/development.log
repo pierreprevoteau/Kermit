@@ -1252,3 +1252,1663 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-23 23:34:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MediaController#index as HTML
+  [1m[35mMedium Load (1.6ms)[0m  SELECT "media".* FROM "media"
+  Rendered media/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 919ms (Views: 896.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:34:44 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-23 23:40:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 957ms (Views: 940.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:40:28 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:40:28 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:35 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:36 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-23 23:42:51 +0100
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-23 23:42:54 +0100
+Processing by MediaController#index as HTML
+  [1m[35mMedium Load (1.8ms)[0m  SELECT "media".* FROM "media"
+  Rendered media/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 79ms (Views: 72.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-23 23:44:33 +0100
+
+
+Started GET "/folders" for 127.0.0.1 at 2015-12-23 23:44:35 +0100
+Processing by FoldersController#index as HTML
+  [1m[36mFolder Load (1.9ms)[0m  [1mSELECT "folders".* FROM "folders"[0m
+  Rendered folders/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 79ms (Views: 73.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/metadata" for 127.0.0.1 at 2015-12-23 23:44:37 +0100
+Processing by MetadataController#index as HTML
+  [1m[35mMetadatum Load (0.9ms)[0m  SELECT "metadata".* FROM "metadata"
+  Rendered metadata/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 79ms (Views: 73.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:36 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-23 23:45:37 +0100
+
+
+Started GET "/sorts" for 127.0.0.1 at 2015-12-23 23:45:39 +0100
+Processing by SortsController#index as HTML
+  [1m[36mSort Load (1.0ms)[0m  [1mSELECT "sorts".* FROM "sorts"[0m
+  Rendered sorts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 79ms (Views: 73.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/states" for 127.0.0.1 at 2015-12-23 23:45:41 +0100
+Processing by StatesController#index as HTML
+  [1m[35mState Load (0.9ms)[0m  SELECT "states".* FROM "states"
+  Rendered states/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 96ms (Views: 90.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-23 23:46:30 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-23 23:46:31 +0100
+
+
+Started GET "/states" for 127.0.0.1 at 2015-12-23 23:46:33 +0100
+Processing by StatesController#index as HTML
+  [1m[36mState Load (0.6ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered states/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 80.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2015-12-23 23:46:35 +0100
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (1.1ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 89ms (Views: 83.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/technicals" for 127.0.0.1 at 2015-12-23 23:46:37 +0100
+Processing by TechnicalsController#index as HTML
+  [1m[36mTechnical Load (4.3ms)[0m  [1mSELECT "technicals".* FROM "technicals"[0m
+  Rendered technicals/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 94ms (Views: 84.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/workflows" for 127.0.0.1 at 2015-12-23 23:46:40 +0100
+Processing by WorkflowsController#index as HTML
+  [1m[35mWorkflow Load (1.0ms)[0m  SELECT "workflows".* FROM "workflows"
+  Rendered workflows/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 98ms (Views: 92.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:03:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MediaController#index as HTML
+  [1m[35mMedium Load (1.0ms)[0m  SELECT "media".* FROM "media"
+  Rendered media/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 466ms (Views: 435.5ms | ActiveRecord: 2.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMedia (20151223230620)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "media" ("id" serial primary key, "title" character varying, "sort_id" integer, "state_id" integer, "folder_id" integer, "duration" character varying, "created_by" integer, "updated_by" integer, "tag_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151223230620"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'folders'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'media'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'metadata'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (7.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'settings'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (6.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sorts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'states'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'tags'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'technicals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'workflows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:08:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 405ms (Views: 391.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:30 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:30 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:30 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-24 00:08:31 +0100
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:08:33 +0100
+Processing by MediaController#index as HTML
+  [1m[35mMedium Load (2.5ms)[0m  SELECT "media".* FROM "media"
+  Rendered media/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 232ms (Views: 196.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/media/new" for 127.0.0.1 at 2015-12-24 00:08:36 +0100
+Processing by MediaController#new as HTML
+  Rendered media/_form.html.erb (24.5ms)
+  Rendered media/new.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 127ms (Views: 110.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/folders" for 127.0.0.1 at 2015-12-24 00:08:50 +0100
+Processing by FoldersController#index as HTML
+  [1m[36mFolder Load (0.8ms)[0m  [1mSELECT "folders".* FROM "folders"[0m
+  Rendered folders/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 86ms (Views: 78.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/folders/new" for 127.0.0.1 at 2015-12-24 00:08:51 +0100
+Processing by FoldersController#new as HTML
+  Rendered folders/_form.html.erb (3.9ms)
+  Rendered folders/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 88ms (Views: 81.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/folders" for 127.0.0.1 at 2015-12-24 00:09:08 +0100
+Processing by FoldersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JlcCCXzoAGOMxovSyF51mNjqnyw5t+LAQflG6MRfjL1FH3gxVWeKD+NWv++X23eMRMGLWNs34pM4hwzS42zW1Q==", "folder"=>{"title"=>"Folder 1", "parent"=>"0"}, "commit"=>"Create Folder"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "folders" ("title", "parent", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Folder 1"], ["parent", 0], ["created_at", "2015-12-23 23:09:08.216727"], ["updated_at", "2015-12-23 23:09:08.216727"]]
+  [1m[35m (2.9ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/folders/1
+Completed 302 Found in 15ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/folders/1" for 127.0.0.1 at 2015-12-24 00:09:08 +0100
+Processing by FoldersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFolder Load (0.5ms)[0m  [1mSELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered folders/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 110ms (Views: 95.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/folders" for 127.0.0.1 at 2015-12-24 00:09:14 +0100
+Processing by FoldersController#index as HTML
+  [1m[35mFolder Load (1.1ms)[0m  SELECT "folders".* FROM "folders"
+  Rendered folders/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/folders/new" for 127.0.0.1 at 2015-12-24 00:09:17 +0100
+Processing by FoldersController#new as HTML
+  Rendered folders/_form.html.erb (2.6ms)
+  Rendered folders/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/folders" for 127.0.0.1 at 2015-12-24 00:09:26 +0100
+Processing by FoldersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BxHVUmmQPccgrTpxfcgnTri3CUvAF8a+6GybC1tuTvpkWa9qQB+3q089DkwiTSVaJJwdPyKXxu2REtExfF0Ukg==", "folder"=>{"title"=>"Folder 2 ", "parent"=>"0"}, "commit"=>"Create Folder"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "folders" ("title", "parent", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Folder 2 "], ["parent", 0], ["created_at", "2015-12-23 23:09:26.576954"], ["updated_at", "2015-12-23 23:09:26.576954"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/folders/2
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/folders/2" for 127.0.0.1 at 2015-12-24 00:09:26 +0100
+Processing by FoldersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mFolder Load (0.5ms)[0m  SELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered folders/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/folders" for 127.0.0.1 at 2015-12-24 00:09:28 +0100
+Processing by FoldersController#index as HTML
+  [1m[36mFolder Load (0.7ms)[0m  [1mSELECT "folders".* FROM "folders"[0m
+  Rendered folders/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/folders/new" for 127.0.0.1 at 2015-12-24 00:09:31 +0100
+Processing by FoldersController#new as HTML
+  Rendered folders/_form.html.erb (2.0ms)
+  Rendered folders/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/folders" for 127.0.0.1 at 2015-12-24 00:09:51 +0100
+Processing by FoldersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mWoZTmwVbGkYEw2as+zTeeLUDYEBQQ9KJ+TPSmpB4cj6ImN2RZrmBXeDOafsadFtfv8Z9ePBDxlemoVwTXK7oA==", "folder"=>{"title"=>"Sub Folder 1", "parent"=>"2"}, "commit"=>"Create Folder"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "folders" ("title", "parent", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Sub Folder 1"], ["parent", 2], ["created_at", "2015-12-23 23:09:51.066993"], ["updated_at", "2015-12-23 23:09:51.066993"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/folders/3
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/folders/3" for 127.0.0.1 at 2015-12-24 00:09:51 +0100
+Processing by FoldersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFolder Load (1.3ms)[0m  [1mSELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered folders/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/folders" for 127.0.0.1 at 2015-12-24 00:10:16 +0100
+Processing by FoldersController#index as HTML
+  [1m[35mFolder Load (0.7ms)[0m  SELECT "folders".* FROM "folders"
+  Rendered folders/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/folders/new" for 127.0.0.1 at 2015-12-24 00:10:19 +0100
+Processing by FoldersController#new as HTML
+  Rendered folders/_form.html.erb (4.6ms)
+  Rendered folders/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/folders" for 127.0.0.1 at 2015-12-24 00:10:27 +0100
+Processing by FoldersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2cdxNANEASDyxHPZutWLY/bV8C2yELkf1Iwo9s4Zlae6jwsMKsuLTJ1UR+TlUIl3av7kWVCQuUyt8mLM6SrPzw==", "folder"=>{"title"=>"Sub Folder 2", "parent"=>"2"}, "commit"=>"Create Folder"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "folders" ("title", "parent", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Sub Folder 2"], ["parent", 2], ["created_at", "2015-12-23 23:10:27.952528"], ["updated_at", "2015-12-23 23:10:27.952528"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/folders/4
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/folders/4" for 127.0.0.1 at 2015-12-24 00:10:27 +0100
+Processing by FoldersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mFolder Load (0.5ms)[0m  SELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered folders/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/folders" for 127.0.0.1 at 2015-12-24 00:10:29 +0100
+Processing by FoldersController#index as HTML
+  [1m[36mFolder Load (0.5ms)[0m  [1mSELECT "folders".* FROM "folders"[0m
+  Rendered folders/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:10:36 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 144ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:10:36 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 149ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sorts" for 127.0.0.1 at 2015-12-24 00:10:45 +0100
+Processing by SortsController#index as HTML
+  [1m[35mSort Load (0.9ms)[0m  SELECT "sorts".* FROM "sorts"
+  Rendered sorts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 100ms (Views: 88.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/sorts/new" for 127.0.0.1 at 2015-12-24 00:10:46 +0100
+Processing by SortsController#new as HTML
+  Rendered sorts/_form.html.erb (3.6ms)
+  Rendered sorts/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 92ms (Views: 85.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/sorts" for 127.0.0.1 at 2015-12-24 00:11:05 +0100
+Processing by SortsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pt/E3gC4WR0mRUnj5DT/GZCGlV4iI9hnFe51BH5gOhnFl77mKTfTcUnVfd67sf0NDK2BKsCj2DRskD8+WVNgcQ==", "sort"=>{"title"=>"Video", "icon"=>"video.png"}, "commit"=>"Create Sort"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "sorts" ("title", "icon", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Video"], ["icon", "video.png"], ["created_at", "2015-12-23 23:11:05.430651"], ["updated_at", "2015-12-23 23:11:05.430651"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/sorts/1
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/sorts/1" for 127.0.0.1 at 2015-12-24 00:11:05 +0100
+Processing by SortsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSort Load (0.5ms)[0m  SELECT  "sorts".* FROM "sorts" WHERE "sorts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered sorts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sorts" for 127.0.0.1 at 2015-12-24 00:11:08 +0100
+Processing by SortsController#index as HTML
+  [1m[36mSort Load (0.5ms)[0m  [1mSELECT "sorts".* FROM "sorts"[0m
+  Rendered sorts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sorts/new" for 127.0.0.1 at 2015-12-24 00:11:09 +0100
+Processing by SortsController#new as HTML
+  Rendered sorts/_form.html.erb (3.0ms)
+  Rendered sorts/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sorts" for 127.0.0.1 at 2015-12-24 00:11:16 +0100
+Processing by SortsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3QeKrnL3Oe07Pt/pQNL33H3ep3XwQ+vvlPIXCQSCY/C+T/CWW3izgVSu69QfV/XI4fWzARLD67ztjF0zI7E5mA==", "sort"=>{"title"=>"Audio", "icon"=>"audio.png"}, "commit"=>"Create Sort"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sorts" ("title", "icon", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Audio"], ["icon", "audio.png"], ["created_at", "2015-12-23 23:11:16.970878"], ["updated_at", "2015-12-23 23:11:16.970878"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/sorts/2
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/sorts/2" for 127.0.0.1 at 2015-12-24 00:11:16 +0100
+Processing by SortsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSort Load (0.6ms)[0m  [1mSELECT  "sorts".* FROM "sorts" WHERE "sorts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered sorts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sorts" for 127.0.0.1 at 2015-12-24 00:11:18 +0100
+Processing by SortsController#index as HTML
+  [1m[35mSort Load (0.5ms)[0m  SELECT "sorts".* FROM "sorts"
+  Rendered sorts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:11:52 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:11:52 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 107ms (Views: 106.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states" for 127.0.0.1 at 2015-12-24 00:11:56 +0100
+Processing by StatesController#index as HTML
+  [1m[36mState Load (1.0ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered states/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 95ms (Views: 88.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/states/new" for 127.0.0.1 at 2015-12-24 00:11:58 +0100
+Processing by StatesController#new as HTML
+  Rendered states/_form.html.erb (3.0ms)
+  Rendered states/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 81ms (Views: 75.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/states" for 127.0.0.1 at 2015-12-24 00:12:04 +0100
+Processing by StatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTWUTBIaJLmtbfJCfrv9SCX/XWW6YC+soXkWHujxb7NSfe50O5Wu1cL9xn8hPv9cudRJEVjgL//YB1wkz8I12w==", "state"=>{"title"=>"Offline"}, "commit"=>"Create State"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "states" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Offline"], ["created_at", "2015-12-23 23:12:04.764212"], ["updated_at", "2015-12-23 23:12:04.764212"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/states/1
+Completed 302 Found in 10ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/states/1" for 127.0.0.1 at 2015-12-24 00:12:04 +0100
+Processing by StatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered states/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 89ms (Views: 86.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/states" for 127.0.0.1 at 2015-12-24 00:12:06 +0100
+Processing by StatesController#index as HTML
+  [1m[35mState Load (0.5ms)[0m  SELECT "states".* FROM "states"
+  Rendered states/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/states/new" for 127.0.0.1 at 2015-12-24 00:12:07 +0100
+Processing by StatesController#new as HTML
+  Rendered states/_form.html.erb (1.9ms)
+  Rendered states/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 88ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/states" for 127.0.0.1 at 2015-12-24 00:12:15 +0100
+Processing by StatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DAGq233a1erydUhS/Uq3/3ES4kuEjjfaVV+1oMRsFINvSdDjVFVfhp3lfG+iz7Xr7Tn2P2YON4ksIf+a419O6w==", "state"=>{"title"=>"Online"}, "commit"=>"Create State"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "states" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["title", "Online"], ["created_at", "2015-12-23 23:12:15.153436"], ["updated_at", "2015-12-23 23:12:15.153436"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/states/2
+Completed 302 Found in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/states/2" for 127.0.0.1 at 2015-12-24 00:12:15 +0100
+Processing by StatesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mState Load (0.5ms)[0m  SELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered states/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 113.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/states" for 127.0.0.1 at 2015-12-24 00:12:18 +0100
+Processing by StatesController#index as HTML
+  [1m[36mState Load (0.7ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered states/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 108ms (Views: 105.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/states/new" for 127.0.0.1 at 2015-12-24 00:12:20 +0100
+Processing by StatesController#new as HTML
+  Rendered states/_form.html.erb (1.9ms)
+  Rendered states/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 113ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/states" for 127.0.0.1 at 2015-12-24 00:12:33 +0100
+Processing by StatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yKcLG5tNghtbRskibVtp2bshmkXIvOKSDJO6SgUzIxir73EjssIIdzTW/R8y3mvNJwqOMSo84sF17fBwIgB5cA==", "state"=>{"title"=>"InProgress"}, "commit"=>"Create State"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "states" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "InProgress"], ["created_at", "2015-12-23 23:12:33.352725"], ["updated_at", "2015-12-23 23:12:33.352725"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/states/3
+Completed 302 Found in 9ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/states/3" for 127.0.0.1 at 2015-12-24 00:12:33 +0100
+Processing by StatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mState Load (0.5ms)[0m  [1mSELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered states/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/states" for 127.0.0.1 at 2015-12-24 00:12:34 +0100
+Processing by StatesController#index as HTML
+  [1m[35mState Load (0.5ms)[0m  SELECT "states".* FROM "states"
+  Rendered states/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 78ms (Views: 76.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/states/new" for 127.0.0.1 at 2015-12-24 00:12:36 +0100
+Processing by StatesController#new as HTML
+  Rendered states/_form.html.erb (1.9ms)
+  Rendered states/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/states" for 127.0.0.1 at 2015-12-24 00:13:09 +0100
+Processing by StatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bCoo6hL21JXyfeKwiWp+B7N2jjfMXW+Tb5tD1cpuXXwPYlLSO3le+Z3t1o3W73wTL12aQy7db8AW5Qnv7V0HFA==", "state"=>{"title"=>"MissingFile"}, "commit"=>"Create State"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "states" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["title", "MissingFile"], ["created_at", "2015-12-23 23:13:09.230320"], ["updated_at", "2015-12-23 23:13:09.230320"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/states/4
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/states/4" for 127.0.0.1 at 2015-12-24 00:13:09 +0100
+Processing by StatesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mState Load (0.5ms)[0m  SELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered states/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 89ms (Views: 86.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/states" for 127.0.0.1 at 2015-12-24 00:13:12 +0100
+Processing by StatesController#index as HTML
+  [1m[36mState Load (0.9ms)[0m  [1mSELECT "states".* FROM "states"[0m
+  Rendered states/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:13:21 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:13:22 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 106ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2015-12-24 00:13:24 +0100
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.9ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 80ms (Views: 73.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tags/new" for 127.0.0.1 at 2015-12-24 00:13:26 +0100
+Processing by TagsController#new as HTML
+  Rendered tags/_form.html.erb (4.8ms)
+  Rendered tags/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 88ms (Views: 79.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/tags" for 127.0.0.1 at 2015-12-24 00:13:47 +0100
+Processing by TagsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yIu431lwQ57gwnH2Rla+8JScOgMCi/v2lVSxXtGnV46rw8LncP/J8o9SRcsZ07zkCLcud+AL+6XsKvtk9pQN5g==", "tag"=>{"title"=>"Feed", "bg_color"=>"#000000", "bd_color"=>"#000000", "tx_color"=>"#FFFFFF"}, "commit"=>"Create Tag"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "tags" ("title", "bg_color", "bd_color", "tx_color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "Feed"], ["bg_color", "#000000"], ["bd_color", "#000000"], ["tx_color", "#FFFFFF"], ["created_at", "2015-12-23 23:13:47.362154"], ["updated_at", "2015-12-23 23:13:47.362154"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/tags/1
+Completed 302 Found in 11ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/tags/1" for 127.0.0.1 at 2015-12-24 00:13:47 +0100
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered tags/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 79.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2015-12-24 00:13:49 +0100
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered tags/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 82ms (Views: 80.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tags/new" for 127.0.0.1 at 2015-12-24 00:13:50 +0100
+Processing by TagsController#new as HTML
+  Rendered tags/_form.html.erb (3.0ms)
+  Rendered tags/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tags" for 127.0.0.1 at 2015-12-24 00:14:36 +0100
+Processing by TagsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aG/XlTzOS+2OLpT3Y7GDKm/GcX8E4cOMuh/F63OZAI8LJ62tFUHBgeG+oMo8NIE+8+1lC+Zhw9/DYY/RVKpa5w==", "tag"=>{"title"=>"Reuters", "bg_color"=>"#FFFFFF", "bd_color"=>"#FFFFFF", "tx_color"=>"#000000"}, "commit"=>"Create Tag"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tags" ("title", "bg_color", "bd_color", "tx_color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Reuters"], ["bg_color", "#FFFFFF"], ["bd_color", "#FFFFFF"], ["tx_color", "#000000"], ["created_at", "2015-12-23 23:14:36.827242"], ["updated_at", "2015-12-23 23:14:36.827242"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/tags/2
+Completed 302 Found in 7ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/tags/2" for 127.0.0.1 at 2015-12-24 00:14:36 +0100
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered tags/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2015-12-24 00:14:39 +0100
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags"
+  Rendered tags/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-24 00:14:43 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 95ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:14:53 +0100
+Processing by MediaController#index as HTML
+  [1m[36mMedium Load (0.5ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  Rendered media/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/media/new" for 127.0.0.1 at 2015-12-24 00:14:54 +0100
+Processing by MediaController#new as HTML
+  Rendered media/_form.html.erb (4.9ms)
+  Rendered media/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/media" for 127.0.0.1 at 2015-12-24 00:15:52 +0100
+Processing by MediaController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h49vh1t4hhAACxfKbCqjbBJ8IK6+1iFZgsvrXPvQGALkxxW/cvcMfG+bI/czr6F4jlc02lxWIQr7taFm3ONCag==", "medium"=>{"title"=>"Velo", "sort_id"=>"1", "state_id"=>"2", "folder_id"=>"1", "duration"=>"00:00:00:00", "created_by"=>"1", "updated_by"=>"1", "tag_id"=>"1"}, "commit"=>"Create Medium"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "media" ("title", "sort_id", "state_id", "folder_id", "duration", "created_by", "updated_by", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Velo"], ["sort_id", 1], ["state_id", 2], ["folder_id", 1], ["duration", "00:00:00:00"], ["created_by", 1], ["updated_by", 1], ["tag_id", "1"], ["created_at", "2015-12-23 23:15:52.804504"], ["updated_at", "2015-12-23 23:15:52.804504"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/media/1
+Completed 302 Found in 9ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/media/1" for 127.0.0.1 at 2015-12-24 00:15:52 +0100
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMedium Load (0.5ms)[0m  [1mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered media/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 101ms (Views: 95.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:15:54 +0100
+Processing by MediaController#index as HTML
+  [1m[35mMedium Load (0.6ms)[0m  SELECT "media".* FROM "media"
+  Rendered media/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 69ms (Views: 67.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+Processing by MediaController#index as HTML
+  [1m[36mMedium Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mSort Load (0.6ms)[0m  SELECT  "sorts".* FROM "sorts" WHERE "sorts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered media/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:36 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:37 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:37 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:37 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:37 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:37 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-24 00:16:37 +0100
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+Processing by MediaController#index as HTML
+  [1m[36mMedium Load (0.7ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mSort Load (0.5ms)[0m  SELECT  "sorts".* FROM "sorts" WHERE "sorts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mState Load (0.5ms)[0m  [1mSELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mFolder Load (0.5ms)[0m  SELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered media/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 99ms (Views: 95.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:09 +0100
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:17:45 +0100
+Processing by MediaController#index as HTML
+  [1m[36mMedium Load (0.6ms)[0m  [1mSELECT "media".* FROM "media"[0m
+  [1m[35mSort Load (0.5ms)[0m  SELECT  "sorts".* FROM "sorts" WHERE "sorts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mState Load (0.4ms)[0m  [1mSELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mFolder Load (0.4ms)[0m  SELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered media/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 117ms (Views: 112.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/folders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:45 +0100
+
+
+Started GET "/assets/media.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:45 +0100
+
+
+Started GET "/assets/metadata.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/metateches.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/scaffolds.self-94181d55e36977d7c1040bfad71469afbcf747aaf6f301de5329e1b1bf7a4e26.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/settings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/states.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/sorts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/technicals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/workflows.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/folders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/metadata.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/sorts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/metateches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/states.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/workflows.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/media.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/technicals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/settings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-24 00:17:46 +0100
+
+
+Started GET "/media/new" for 127.0.0.1 at 2015-12-24 00:18:28 +0100
+Processing by MediaController#new as HTML
+  Rendered media/_form.html.erb (5.1ms)
+  Rendered media/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/media" for 127.0.0.1 at 2015-12-24 00:19:07 +0100
+Processing by MediaController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0JOWm+X/TaedDPf/PN20C7qsRBRjkzZ1VeN5EKX2xZuz2+yjzHDHy/Kcw8JjWLYfJodQYIETNiYsnTMqgsWf8w==", "medium"=>{"title"=>"Jazz", "sort_id"=>"2", "state_id"=>"1", "folder_id"=>"3", "duration"=>"00:00:00:00", "created_by"=>"1", "updated_by"=>"1", "tag_id"=>"1"}, "commit"=>"Create Medium"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "media" ("title", "sort_id", "state_id", "folder_id", "duration", "created_by", "updated_by", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Jazz"], ["sort_id", 2], ["state_id", 1], ["folder_id", 3], ["duration", "00:00:00:00"], ["created_by", 1], ["updated_by", 1], ["tag_id", "1"], ["created_at", "2015-12-23 23:19:07.222762"], ["updated_at", "2015-12-23 23:19:07.222762"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/media/2
+Completed 302 Found in 9ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/media/2" for 127.0.0.1 at 2015-12-24 00:19:07 +0100
+Processing by MediaController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMedium Load (3.1ms)[0m  [1mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered media/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 94ms (Views: 88.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/media" for 127.0.0.1 at 2015-12-24 00:19:10 +0100
+Processing by MediaController#index as HTML
+  [1m[35mMedium Load (0.7ms)[0m  SELECT "media".* FROM "media"
+  [1m[36mSort Load (0.5ms)[0m  [1mSELECT  "sorts".* FROM "sorts" WHERE "sorts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mState Load (0.3ms)[0m  SELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mFolder Load (0.3ms)[0m  [1mSELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.5ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mSort Load (0.4ms)[0m  [1mSELECT  "sorts".* FROM "sorts" WHERE "sorts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mState Load (0.3ms)[0m  SELECT  "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mFolder Load (0.3ms)[0m  [1mSELECT  "folders".* FROM "folders" WHERE "folders"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered media/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 82ms (Views: 78.2ms | ActiveRecord: 3.5ms)

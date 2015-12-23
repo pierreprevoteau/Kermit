@@ -8,7 +8,7 @@ one:
   duration: MyString
   created_by: 1
   updated_by: 1
-  tag: MyString
+  tag_id: MyString
 
 two:
   title: MyString
@@ -18,4 +18,4 @@ two:
   duration: MyString
   created_by: 1
   updated_by: 1
-  tag: MyString
+  tag_id: MyString
