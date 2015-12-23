@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @sort.title %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @sort.icon %>
+</p>
+
+<%= link_to 'Edit', edit_sort_path(@sort) %> |
+<%= link_to 'Back', sorts_path %>

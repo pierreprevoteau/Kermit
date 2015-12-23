@@ -1,0 +1,29 @@
+== MEMO
+
+- rails generate scaffold Media title:string sort_id:integer state_id:integer folder_id:integer duration:string created_by:integer updated_by:integer tag:string
+- rails generate scaffold Technical media_id:integer item:string hash:string general_format_media:string general_commercial_name_media:string general_format_profile_media:string general_format_settings_media:string general_file_size_media:string general_duration_media:string general_overall_bit_rate_media:string general_encoded_date_media:string general_writing_application_media:string general_writing_library_media:string video_id_media:string video_format_media:string video_commercial_name_media:string video_format_version_media:string video_format_profile_media:string video_bvop_media:string video_matrix_media:string video_gop_media:string video_wrapping_media:string video_duration_media:string video_bit_rate_media:string video_width_media:string video_height_media:string video_display_aspect_ratio_media:string video_frame_rate_media:string video_color_space_media:string video_chroma_subsampling_media:string video_bit_depth_media:string video_scan_type_media:string video_compression_mode_media:string video_ratio_bits_pixel_frame_media:string video_tc_first_frame_media:string video_tc_source_media:string video_stream_size_media:string audio1_id_media:string audio1_format_media:string audio1_endianness_media:string audio1_wrapping_media:string audio1_duration_media:string audio1_bit_rate_mode_media:string audio1_bit_rate_media:string audio1_channel_media:string audio1_sampling_rate_media:string audio1_bit_depth_media:string audio1_streaming_size_media:string audio2_id_media:string audio2_format_media:string audio2_endianness_media:string audio2_wrapping_media:string audio2_duration_media:string audio2_bit_rate_mode_media:string audio2_bit_rate_media:string audio2_channel_media:string audio2_sampling_rate_media:string audio2_bit_depth_media:string audio2_streaming_size_media:string audio3_id_media:string audio3_format_media:string audio3_endianness_media:string audio3_wrapping_media:string audio3_duration_media:string audio3_bit_rate_mode_media:string audio3_bit_rate_media:string audio3_channel_media:string audio3_sampling_rate_media:string audio3_bit_depth_media:string audio3_streaming_size_media:string audio4_id_media:string audio4_format_media:string audio4_endianness_media:string audio4_wrapping_media:string audio4_duration_media:string audio4_bit_rate_mode_media:string audio4_bit_rate_media:string audio4_channel_media:string audio4_sampling_rate_media:string audio4_bit_depth_media:string audio4_streaming_size_media:string
+- rails generate scaffold State title:string
+- rails generate scaffold Sort title:string icon:string
+- rails generate scaffold Folder title:string parent:integer
+- rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
+- rails generate scaffold Workflow title:string type:string active:boolean path:string folder_id:integer
+- rails generate scaffold Setting key:string value:string
+- rails generate scaffold Metadata media_id:integer key:string value:string
+
+- Use **Postgre** for SQL
+- Use **Redis** for NOSQL
+- Use **Devise** for administration loggin
+- Use **Resque** for joblist and cron
+  - https://github.com/resque/resque-web
+  - https://github.com/quirkey/resque-status
+  - https://github.com/resque/resque-scheduler
+  - https://github.com/thoward/resque-mission
+  - https://github.com/ono/resque-cleaner
+  - https://github.com/alanpeabody/resque-job-stats
+  - https://github.com/kmullin/resque-sliders
+  - https://github.com/ilyakatz/resque-history
+- Use **Net Sftp** for pull and push ftp
+- Use **Wash Out** for webservices
+- Use **Savon** for webservices
+- Use **Mediainfo** for metadata
+- Use **Ffmpeg** and **ffmbc** for transcode

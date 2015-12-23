@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @medium.title %>
+</p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @medium.sort_id %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @medium.state_id %>
+</p>
+
+<p>
+  <strong>Folder:</strong>
+  <%= @medium.folder_id %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @medium.duration %>
+</p>
+
+<p>
+  <strong>Created by:</strong>
+  <%= @medium.created_by %>
+</p>
+
+<p>
+  <strong>Updated by:</strong>
+  <%= @medium.updated_by %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @medium.tag %>
+</p>
+
+<%= link_to 'Edit', edit_medium_path(@medium) %> |
+<%= link_to 'Back', media_path %>

@@ -1,29 +1,24 @@
 development:
-  adapter: postgresql
-  encoding: utf8
-  database: <%= ENV["DB_CONNECT_DATABASE"] %>
-  pool: 5
-  username: <%= ENV["DB_CONNECT_USERNAME"] %>
-  password: <%= ENV["DB_CONNECT_PASSWORD"] %>
-  host: <%= ENV["DB_CONNECT_HOST"] %>
-  port: <%= ENV["DB_CONNECT_PORT"] %> 
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: kermit_development
+  pool:     5
+  username: pierreprevoteau
+  password:
+  template: template0
 
 test:
   adapter: postgresql
-  encoding: utf8
-  database: <%= ENV["DB_CONNECT_DATABASE"] %>
-  pool: 5
-  username: <%= ENV["DB_CONNECT_USERNAME"] %>
-  password: <%= ENV["DB_CONNECT_PASSWORD"] %>
-  host: <%= ENV["DB_CONNECT_HOST"] %>
-  port: <%= ENV["DB_CONNECT_PORT"] %> 
+  database: travis_ci_test
+  username: postgres
 
 production:
-  adapter: postgresql
-  encoding: utf8
-  database: <%= ENV["DB_CONNECT_DATABASE"] %>
-  pool: 5
-  username: <%= ENV["DB_CONNECT_USERNAME"] %>
-  password: <%= ENV["DB_CONNECT_PASSWORD"] %>
-  host: <%= ENV["DB_CONNECT_HOST"] %>
-  port: <%= ENV["DB_CONNECT_PORT"] %> 
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: kermit_production
+  pool:     5
+  username: bao
+  password:
+  template: template0

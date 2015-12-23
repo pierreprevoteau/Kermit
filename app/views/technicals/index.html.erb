@@ -1,0 +1,187 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Technicals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Media</th>
+      <th>Item</th>
+      <th>Hash</th>
+      <th>General format media</th>
+      <th>General commercial name media</th>
+      <th>General format profile media</th>
+      <th>General format settings media</th>
+      <th>General file size media</th>
+      <th>General duration media</th>
+      <th>General overall bit rate media</th>
+      <th>General encoded date media</th>
+      <th>General writing application media</th>
+      <th>General writing library media</th>
+      <th>Video id media</th>
+      <th>Video format media</th>
+      <th>Video commercial name media</th>
+      <th>Video format version media</th>
+      <th>Video format profile media</th>
+      <th>Video bvop media</th>
+      <th>Video matrix media</th>
+      <th>Video gop media</th>
+      <th>Video wrapping media</th>
+      <th>Video duration media</th>
+      <th>Video bit rate media</th>
+      <th>Video width media</th>
+      <th>Video height media</th>
+      <th>Video display aspect ratio media</th>
+      <th>Video frame rate media</th>
+      <th>Video color space media</th>
+      <th>Video chroma subsampling media</th>
+      <th>Video bit depth media</th>
+      <th>Video scan type media</th>
+      <th>Video compression mode media</th>
+      <th>Video ratio bits pixel frame media</th>
+      <th>Video tc first frame media</th>
+      <th>Video tc source media</th>
+      <th>Video stream size media</th>
+      <th>Audio1 id media</th>
+      <th>Audio1 format media</th>
+      <th>Audio1 endianness media</th>
+      <th>Audio1 wrapping media</th>
+      <th>Audio1 duration media</th>
+      <th>Audio1 bit rate mode media</th>
+      <th>Audio1 bit rate media</th>
+      <th>Audio1 channel media</th>
+      <th>Audio1 sampling rate media</th>
+      <th>Audio1 bit depth media</th>
+      <th>Audio1 streaming size media</th>
+      <th>Audio2 id media</th>
+      <th>Audio2 format media</th>
+      <th>Audio2 endianness media</th>
+      <th>Audio2 wrapping media</th>
+      <th>Audio2 duration media</th>
+      <th>Audio2 bit rate mode media</th>
+      <th>Audio2 bit rate media</th>
+      <th>Audio2 channel media</th>
+      <th>Audio2 sampling rate media</th>
+      <th>Audio2 bit depth media</th>
+      <th>Audio2 streaming size media</th>
+      <th>Audio3 id media</th>
+      <th>Audio3 format media</th>
+      <th>Audio3 endianness media</th>
+      <th>Audio3 wrapping media</th>
+      <th>Audio3 duration media</th>
+      <th>Audio3 bit rate mode media</th>
+      <th>Audio3 bit rate media</th>
+      <th>Audio3 channel media</th>
+      <th>Audio3 sampling rate media</th>
+      <th>Audio3 bit depth media</th>
+      <th>Audio3 streaming size media</th>
+      <th>Audio4 id media</th>
+      <th>Audio4 format media</th>
+      <th>Audio4 endianness media</th>
+      <th>Audio4 wrapping media</th>
+      <th>Audio4 duration media</th>
+      <th>Audio4 bit rate mode media</th>
+      <th>Audio4 bit rate media</th>
+      <th>Audio4 channel media</th>
+      <th>Audio4 sampling rate media</th>
+      <th>Audio4 bit depth media</th>
+      <th>Audio4 streaming size media</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @technicals.each do |technical| %>
+      <tr>
+        <td><%= technical.media_id %></td>
+        <td><%= technical.item %></td>
+        <td><%= technical.hash %></td>
+        <td><%= technical.general_format_media %></td>
+        <td><%= technical.general_commercial_name_media %></td>
+        <td><%= technical.general_format_profile_media %></td>
+        <td><%= technical.general_format_settings_media %></td>
+        <td><%= technical.general_file_size_media %></td>
+        <td><%= technical.general_duration_media %></td>
+        <td><%= technical.general_overall_bit_rate_media %></td>
+        <td><%= technical.general_encoded_date_media %></td>
+        <td><%= technical.general_writing_application_media %></td>
+        <td><%= technical.general_writing_library_media %></td>
+        <td><%= technical.video_id_media %></td>
+        <td><%= technical.video_format_media %></td>
+        <td><%= technical.video_commercial_name_media %></td>
+        <td><%= technical.video_format_version_media %></td>
+        <td><%= technical.video_format_profile_media %></td>
+        <td><%= technical.video_bvop_media %></td>
+        <td><%= technical.video_matrix_media %></td>
+        <td><%= technical.video_gop_media %></td>
+        <td><%= technical.video_wrapping_media %></td>
+        <td><%= technical.video_duration_media %></td>
+        <td><%= technical.video_bit_rate_media %></td>
+        <td><%= technical.video_width_media %></td>
+        <td><%= technical.video_height_media %></td>
+        <td><%= technical.video_display_aspect_ratio_media %></td>
+        <td><%= technical.video_frame_rate_media %></td>
+        <td><%= technical.video_color_space_media %></td>
+        <td><%= technical.video_chroma_subsampling_media %></td>
+        <td><%= technical.video_bit_depth_media %></td>
+        <td><%= technical.video_scan_type_media %></td>
+        <td><%= technical.video_compression_mode_media %></td>
+        <td><%= technical.video_ratio_bits_pixel_frame_media %></td>
+        <td><%= technical.video_tc_first_frame_media %></td>
+        <td><%= technical.video_tc_source_media %></td>
+        <td><%= technical.video_stream_size_media %></td>
+        <td><%= technical.audio1_id_media %></td>
+        <td><%= technical.audio1_format_media %></td>
+        <td><%= technical.audio1_endianness_media %></td>
+        <td><%= technical.audio1_wrapping_media %></td>
+        <td><%= technical.audio1_duration_media %></td>
+        <td><%= technical.audio1_bit_rate_mode_media %></td>
+        <td><%= technical.audio1_bit_rate_media %></td>
+        <td><%= technical.audio1_channel_media %></td>
+        <td><%= technical.audio1_sampling_rate_media %></td>
+        <td><%= technical.audio1_bit_depth_media %></td>
+        <td><%= technical.audio1_streaming_size_media %></td>
+        <td><%= technical.audio2_id_media %></td>
+        <td><%= technical.audio2_format_media %></td>
+        <td><%= technical.audio2_endianness_media %></td>
+        <td><%= technical.audio2_wrapping_media %></td>
+        <td><%= technical.audio2_duration_media %></td>
+        <td><%= technical.audio2_bit_rate_mode_media %></td>
+        <td><%= technical.audio2_bit_rate_media %></td>
+        <td><%= technical.audio2_channel_media %></td>
+        <td><%= technical.audio2_sampling_rate_media %></td>
+        <td><%= technical.audio2_bit_depth_media %></td>
+        <td><%= technical.audio2_streaming_size_media %></td>
+        <td><%= technical.audio3_id_media %></td>
+        <td><%= technical.audio3_format_media %></td>
+        <td><%= technical.audio3_endianness_media %></td>
+        <td><%= technical.audio3_wrapping_media %></td>
+        <td><%= technical.audio3_duration_media %></td>
+        <td><%= technical.audio3_bit_rate_mode_media %></td>
+        <td><%= technical.audio3_bit_rate_media %></td>
+        <td><%= technical.audio3_channel_media %></td>
+        <td><%= technical.audio3_sampling_rate_media %></td>
+        <td><%= technical.audio3_bit_depth_media %></td>
+        <td><%= technical.audio3_streaming_size_media %></td>
+        <td><%= technical.audio4_id_media %></td>
+        <td><%= technical.audio4_format_media %></td>
+        <td><%= technical.audio4_endianness_media %></td>
+        <td><%= technical.audio4_wrapping_media %></td>
+        <td><%= technical.audio4_duration_media %></td>
+        <td><%= technical.audio4_bit_rate_mode_media %></td>
+        <td><%= technical.audio4_bit_rate_media %></td>
+        <td><%= technical.audio4_channel_media %></td>
+        <td><%= technical.audio4_sampling_rate_media %></td>
+        <td><%= technical.audio4_bit_depth_media %></td>
+        <td><%= technical.audio4_streaming_size_media %></td>
+        <td><%= link_to 'Show', technical %></td>
+        <td><%= link_to 'Edit', edit_technical_path(technical) %></td>
+        <td><%= link_to 'Destroy', technical, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Technical', new_technical_path %>
