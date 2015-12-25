@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :media
   resources :media
   get 'pages/home'
-
+  get 'pages/dev'
   resources :metadata
   resources :settings
   resources :workflows
