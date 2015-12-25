@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151223230620) do
+ActiveRecord::Schema.define(version: 20151225214959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,12 +23,17 @@ ActiveRecord::Schema.define(version: 20151223230620) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "links", force: :cascade do |t|
+    t.integer  "medium_id"
+    t.integer  "folder_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "media", force: :cascade do |t|
     t.string   "title"
     t.integer  "sort_id"
     t.integer  "state_id"
-    t.integer  "folder_id"
-    t.string   "duration"
     t.integer  "created_by"
     t.integer  "updated_by"
     t.string   "tag_id"
@@ -37,7 +42,7 @@ ActiveRecord::Schema.define(version: 20151223230620) do
   end
 
   create_table "metadata", force: :cascade do |t|
-    t.integer  "media_id"
+    t.integer  "medium_id"
     t.string   "key"
     t.string   "value"
     t.datetime "created_at", null: false
@@ -74,7 +79,7 @@ ActiveRecord::Schema.define(version: 20151223230620) do
   end
 
   create_table "technicals", force: :cascade do |t|
-    t.integer  "media_id"
+    t.integer  "medium_id"
     t.string   "item"
     t.string   "hash"
     t.string   "general_format_media"

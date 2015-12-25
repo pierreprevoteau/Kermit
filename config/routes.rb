@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :metadata
+  resources :technicals
+  resources :links
+  resources :media
+  resources :media
+  resources :links
+  resources :media
   resources :media
   get 'pages/home'
 

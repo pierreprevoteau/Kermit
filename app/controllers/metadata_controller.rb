@@ -69,6 +69,6 @@ class MetadataController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def metadatum_params
-      params.require(:metadatum).permit(:media_id, :key, :value)
+      params.require(:metadatum).permit(:medium_id, :key, :value)
     end
 end

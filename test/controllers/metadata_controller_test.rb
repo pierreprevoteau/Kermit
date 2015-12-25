@@ -18,7 +18,7 @@ class MetadataControllerTest < ActionController::TestCase
 
   test "should create metadatum" do
     assert_difference('Metadatum.count') do
-      post :create, metadatum: { key: @metadatum.key, media_id: @metadatum.media_id, value: @metadatum.value }
+      post :create, metadatum: { key: @metadatum.key, medium_id: @metadatum.medium_id, value: @metadatum.value }
     end
 
     assert_redirected_to metadatum_path(assigns(:metadatum))
@@ -35,7 +35,7 @@ class MetadataControllerTest < ActionController::TestCase
   end
 
   test "should update metadatum" do
-    patch :update, id: @metadatum, metadatum: { key: @metadatum.key, media_id: @metadatum.media_id, value: @metadatum.value }
+    patch :update, id: @metadatum, metadatum: { key: @metadatum.key, medium_id: @metadatum.medium_id, value: @metadatum.value }
     assert_redirected_to metadatum_path(assigns(:metadatum))
   end
 

@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  media_id: 1
+  medium_id: 1
   item: MyString
   hash: MyString
   general_format_media: MyString
@@ -84,7 +84,7 @@ one:
   audio4_streaming_size_media: MyString
 
 two:
-  media_id: 1
+  medium_id: 1
   item: MyString
   hash: MyString
   general_format_media: MyString

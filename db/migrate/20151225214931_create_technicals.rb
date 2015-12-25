@@ -1,7 +1,7 @@
 class CreateTechnicals < ActiveRecord::Migration
   def change
     create_table :technicals do |t|
-      t.integer :media_id
+      t.integer :medium_id
       t.string :item
       t.string :hash
       t.string :general_format_media
