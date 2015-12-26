@@ -136,6 +136,7 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    videojs_rails (4.12.14)
     web-console (3.0.0)
       activemodel (>= 4.2)
       debug_inspector
@@ -156,6 +157,7 @@ DEPENDENCIES
   thin
   turbolinks
   uglifier
+  videojs_rails
   web-console
 
 BUNDLED WITH

@@ -3,7 +3,6 @@
 one:
   medium_id: 1
   item: MyString
-  hash: MyString
   general_format_media: MyString
   general_commercial_name_media: MyString
   general_format_profile_media: MyString
@@ -86,7 +85,6 @@ one:
 two:
   medium_id: 1
   item: MyString
-  hash: MyString
   general_format_media: MyString
   general_commercial_name_media: MyString
   general_format_profile_media: MyString

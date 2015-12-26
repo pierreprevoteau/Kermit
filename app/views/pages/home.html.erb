@@ -1,1 +1,40 @@
-H
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+      <div class="list-group">
+        <% @folders.each do |folder| %>
+          <button type="button" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><%= folder.title %></button>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="panel panel-default">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Type</th>
+              <th>Titre</th>
+              <th>Durée</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @links.each do |link| %>
+            <tr>
+              <th><%= link.medium.state.title %></th>
+              <td><%= link.medium.sort.title %></td>
+              <td><%= link.medium.title %></td>
+              <td><%= link.medium %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="embed-responsive embed-responsive-16by9">
+      <%= videojs_rails sources: { mp4: "http://vjs.zencdn.net/v/oceans.mp4"}, setup: "{}", controls: true, width:"auto", height:"250" %>
+      </div>
+    </div>
+  </div>
+</div>

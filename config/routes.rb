@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :technicals
   resources :metadata
   resources :technicals
   resources :links

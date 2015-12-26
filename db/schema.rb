@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151225214959) do
+ActiveRecord::Schema.define(version: 20151226135954) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,7 +81,6 @@ ActiveRecord::Schema.define(version: 20151225214959) do
   create_table "technicals", force: :cascade do |t|
     t.integer  "medium_id"
     t.string   "item"
-    t.string   "hash"
     t.string   "general_format_media"
     t.string   "general_commercial_name_media"
     t.string   "general_format_profile_media"
