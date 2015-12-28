@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :states
+  resources :media
+  devise_for :users
   resources :technicals
   resources :metadata
   resources :technicals

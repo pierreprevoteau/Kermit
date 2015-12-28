@@ -16,3 +16,7 @@
 //= require turbolinks
 //= require video
 //= require_tree .
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

@@ -7,6 +7,7 @@ class CreateMedia < ActiveRecord::Migration
       t.integer :created_by
       t.integer :updated_by
       t.string :tag_id
+      t.string :duration
 
       t.timestamps null: false
     end

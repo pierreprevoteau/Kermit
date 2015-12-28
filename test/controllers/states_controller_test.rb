@@ -18,7 +18,7 @@ class StatesControllerTest < ActionController::TestCase
 
   test "should create state" do
     assert_difference('State.count') do
-      post :create, state: { title: @state.title }
+      post :create, state: { bd_color: @state.bd_color, title: @state.title }
     end
 
     assert_redirected_to state_path(assigns(:state))
@@ -35,7 +35,7 @@ class StatesControllerTest < ActionController::TestCase
   end
 
   test "should update state" do
-    patch :update, id: @state, state: { title: @state.title }
+    patch :update, id: @state, state: { bd_color: @state.bd_color, title: @state.title }
     assert_redirected_to state_path(assigns(:state))
   end
 
