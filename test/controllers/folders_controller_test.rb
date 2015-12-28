@@ -18,7 +18,7 @@ class FoldersControllerTest < ActionController::TestCase
 
   test "should create folder" do
     assert_difference('Folder.count') do
-      post :create, folder: { parent: @folder.parent, title: @folder.title }
+      post :create, folder: { parent_id: @folder.parent_id, title: @folder.title }
     end
 
     assert_redirected_to folder_path(assigns(:folder))
@@ -35,7 +35,7 @@ class FoldersControllerTest < ActionController::TestCase
   end
 
   test "should update folder" do
-    patch :update, id: @folder, folder: { parent: @folder.parent, title: @folder.title }
+    patch :update, id: @folder, folder: { parent_id: @folder.parent_id, title: @folder.title }
     assert_redirected_to folder_path(assigns(:folder))
   end
 

@@ -15,8 +15,55 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require video
+//= require treeview
 //= require_tree .
 
+//init tooltips
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
+
+//init tree
+$(document).ready(function() {
+var datatree = [
+  {
+    text: "Parent 1",
+    nodes: [
+      {
+        text: "Child 1",
+        nodes: [
+          {
+            text: "Grandchild 1 with a realy realy loooong name"
+          },
+          {
+            text: "Grandchild 2"
+          }
+        ]
+      },
+      {
+        text: "Child 2"
+      }
+    ]
+  },
+  {
+    text: "Parent 2"
+  },
+  {
+    text: "Parent 3"
+  },
+  {
+    text: "Parent 4"
+  },
+  {
+    text: "Parent 5"
+  }
+];
+
+$('#tree').treeview({
+  data: datatree,
+  collapseIcon: "glyphicon glyphicon-folder-open",
+  expandIcon: "glyphicon glyphicon-folder-close",
+  emptyIcon: "glyphicon glyphicon-folder-open",
+  levels: 0
+});
+});

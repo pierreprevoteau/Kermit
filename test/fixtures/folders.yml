@@ -2,8 +2,8 @@
 
 one:
   title: MyString
-  parent: 1
+  parent_id: 1
 
 two:
   title: MyString
-  parent: 1
+  parent_id: 1

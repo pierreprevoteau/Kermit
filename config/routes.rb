@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :folders
   resources :states
   resources :media
   devise_for :users

@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+  <div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Tag</th>
+        <th>Titre</th>
+        <th>Durée</th>
+        <th>Créé</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @links.each do |link| %>
+      <tr>
+        <td><i class="fa <%= link.medium.sort.icon %> fa-2x" style="color: <%= link.medium.state.bd_color %>;" data-toggle="tooltip" data-placement="top" title="<%= link.medium.state.title %>"></i></td>
+        <td><span class="label" style="color: <%= link.medium.tag.tx_color %>; background-color: <%= link.medium.tag.bg_color %>; border: 1px solid <%= link.medium.tag.bd_color %>;"><%= link.medium.tag.title %></span></td>
+        <td><strong><%= link.medium.title %></strong></td>
+        <td><%= link.medium.duration %></td>
+        <td><%= link.medium.created_at.strftime("%HH%M %d/%m/%Y") %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+</div>
