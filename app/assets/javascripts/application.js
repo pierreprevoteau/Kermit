@@ -51,7 +51,7 @@ $('#tree').treeview({
   collapseIcon: "glyphicon glyphicon-folder-open",
   expandIcon: "glyphicon glyphicon-folder-close",
   emptyIcon: "glyphicon glyphicon-folder-open",
-  levels: 2,
+  levels: 5,
   enableLinks: true
 });
 });

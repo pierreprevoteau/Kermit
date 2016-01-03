@@ -5,5 +5,5 @@ class Medium < ActiveRecord::Base
   has_many :link
   has_many :folder, through: :link
   has_many :technical
-  # has_many :metadatum
+  has_many :metadatum
 end

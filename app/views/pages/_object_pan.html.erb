@@ -4,8 +4,8 @@
     <thead>
       <tr>
         <th>Type</th>
-        <th>Tag</th>
         <th>Titre</th>
+        <th>Tag</th>
         <th>Durée</th>
         <th>Créé</th>
       </tr>
@@ -14,8 +14,8 @@
       <% @folders.each do |folder| %>
       <tr>
         <td><i class="fa fa-folder fa-2x"></i></td>
+        <td><strong><%= link_to folder.title, pages_home_path(current_folder_id: folder.id) %></strong></td>
         <td></td>
-        <td><strong><% folder.title %></strong></td>
         <td></td>
         <td></td>
       </tr>
@@ -23,8 +23,8 @@
       <% @links.each do |link| %>
       <tr>
         <td><i class="fa <%= link.medium.sort.icon %> fa-2x" style="color: <%= link.medium.state.bd_color %>;" data-toggle="tooltip" data-placement="top" title="<%= link.medium.state.title %>"></i></td>
+        <td><strong><%= link_to link.medium.title, pages_home_path(current_folder_id: link.folder_id, current_medium_id: link.medium_id) %></strong></td>
         <td><span class="label" style="color: <%= link.medium.tag.tx_color %>; background-color: <%= link.medium.tag.bg_color %>; border: 1px solid <%= link.medium.tag.bd_color %>;"><%= link.medium.tag.title %></span></td>
-        <td><strong><%= link.medium.title %></strong></td>
         <td><%= link.medium.duration %></td>
         <td><%= link.medium.created_at.strftime("%d/%m/%Y %HH%M") %></td>
       </tr>
