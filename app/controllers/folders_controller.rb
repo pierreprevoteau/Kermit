@@ -1,11 +1,26 @@
 class FoldersController < ApplicationController
   before_action :set_folder, only: [:show, :edit, :update, :destroy]
 
+
   # GET /folders
   # GET /folders.json
   def index
+
     @folders = Folder.all
+
+    trees = Folder.all.where(parent_id: nil)
+    @trees = Array.new
+
+    trees.each do |tree|
+      @trees.push Folder.json_tree(tree.hash_tree).first
+    end
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => @trees, root: false }
+    end
   end
+
 
   # GET /folders/1
   # GET /folders/1.json

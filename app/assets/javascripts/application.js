@@ -25,45 +25,33 @@ $(function () {
 
 //init tree
 $(document).ready(function() {
-var datatree = [
-  {
-    text: "Parent 1",
-    nodes: [
-      {
-        text: "Child 1",
-        nodes: [
-          {
-            text: "Grandchild 1 with a realy realy loooong name"
-          },
-          {
-            text: "Grandchild 2"
-          }
-        ]
-      },
-      {
-        text: "Child 2"
-      }
-    ]
-  },
-  {
-    text: "Parent 2"
-  },
-  {
-    text: "Parent 3"
-  },
-  {
-    text: "Parent 4"
-  },
-  {
-    text: "Parent 5"
-  }
-];
+
+  function getJSON(url) {
+         var resp ;
+         var xmlHttp ;
+
+         resp  = '' ;
+         xmlHttp = new XMLHttpRequest();
+
+         if(xmlHttp != null)
+         {
+             xmlHttp.open( "GET", url, false );
+             xmlHttp.send( null );
+             resp = xmlHttp.responseText;
+         }
+
+         return resp ;
+     };
+
+     var datatree ;
+     datatree = getJSON('/folders.json') ;
 
 $('#tree').treeview({
   data: datatree,
   collapseIcon: "glyphicon glyphicon-folder-open",
   expandIcon: "glyphicon glyphicon-folder-close",
   emptyIcon: "glyphicon glyphicon-folder-open",
-  levels: 0
+  levels: 2,
+  enableLinks: true
 });
 });
