@@ -2,14 +2,14 @@
 
 one:
   title: MyString
-  type: 
+  kind: MyString
   active: false
-  path: MyString
-  folder_id: 1
+  storage_folder: MyString
+  db_folder: 1
 
 two:
   title: MyString
-  type: 
+  kind: MyString
   active: false
-  path: MyString
-  folder_id: 1
+  storage_folder: MyString
+  db_folder: 1

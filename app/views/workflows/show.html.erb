@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <strong>Type:</strong>
-  <%= @workflow.type %>
+  <strong>Kind:</strong>
+  <%= @workflow.kind %>
 </p>
 
 <p>
@@ -16,13 +16,13 @@
 </p>
 
 <p>
-  <strong>Path:</strong>
-  <%= @workflow.path %>
+  <strong>Storage folder:</strong>
+  <%= @workflow.storage_folder %>
 </p>
 
 <p>
-  <strong>Folder:</strong>
-  <%= @workflow.folder_id %>
+  <strong>Db folder:</strong>
+  <%= @workflow.db_folder %>
 </p>
 
 <%= link_to 'Edit', edit_workflow_path(@workflow) %> |

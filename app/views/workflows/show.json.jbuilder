@@ -1,1 +1,1 @@
-json.extract! @workflow, :id, :title, :type, :active, :path, :folder_id, :created_at, :updated_at
+json.extract! @workflow, :id, :title, :kind, :active, :storage_folder, :db_folder, :created_at, :updated_at

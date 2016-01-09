@@ -5,6 +5,12 @@ class WorkflowsController < ApplicationController
   # GET /workflows.json
   def index
     @workflows = Workflow.all
+
+    @imports = Workflow.all.where(kind: "import_job", active: true)
+    @imports.each do |import|
+      ImportJob.perform_later(import.title, import.kind, import.storage_folder, import.db_folder)
+    end
+
   end
 
   # GET /workflows/1
@@ -69,6 +75,6 @@ class WorkflowsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def workflow_params
-      params.require(:workflow).permit(:title, :type, :active, :path, :folder_id)
+      params.require(:workflow).permit(:title, :kind, :active, :storage_folder, :db_folder)
     end
 end

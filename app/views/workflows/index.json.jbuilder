@@ -1,4 +1,4 @@
 json.array!(@workflows) do |workflow|
-  json.extract! workflow, :id, :title, :type, :active, :path, :folder_id
+  json.extract! workflow, :id, :title, :kind, :active, :storage_folder, :db_folder
   json.url workflow_url(workflow, format: :json)
 end

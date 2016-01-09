@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151228224528) do
+ActiveRecord::Schema.define(version: 20160109175233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -194,12 +194,12 @@ ActiveRecord::Schema.define(version: 20151228224528) do
 
   create_table "workflows", force: :cascade do |t|
     t.string   "title"
-    t.string   "type"
+    t.string   "kind"
     t.boolean  "active"
-    t.string   "path"
-    t.integer  "folder_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "storage_folder"
+    t.integer  "db_folder"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
 end
