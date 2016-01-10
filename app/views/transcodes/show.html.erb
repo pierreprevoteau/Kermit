@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @transcode.title %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @transcode.profile %>
+</p>
+
+<%= link_to 'Edit', edit_transcode_path(@transcode) %> |
+<%= link_to 'Back', transcodes_path %>

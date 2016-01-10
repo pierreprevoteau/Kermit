@@ -1,4 +1,7 @@
 class ImportJob < ActiveJob::Base
+
+  require 'fileutils'
+
   queue_as :default
 
   def perform(title, kind, storage_folder, db_folder)
@@ -9,16 +12,13 @@ class ImportJob < ActiveJob::Base
     ingest_directory = 'public/IN/'+ storage_folder + '/'
     video_extensions = [".mp4", ".mxf"]
     audio_extensions = [".mp3", ".wav"]
-
-    if Dir[ingest_directory + '*'].empty?
-      puts "Nothing to import"
-      exit
-    end
-
     files = Dir.entries(ingest_directory).select {|f| !File.directory? f}
+    files.delete(".DS_Store")
+    files.delete("DONE")
+    files.delete("FAILED")
 
     files.each do |file|
-
+      puts file
       file_extname = File.extname(file)
       file_basename = File.basename(file, ".*")
 
@@ -26,13 +26,24 @@ class ImportJob < ActiveJob::Base
         sort = 1
       elsif (audio_extensions.include? file_extname)
         sort = 2
+      else
+        sort = 1
       end
 
       @medium = Medium.new(title: file_basename, sort_id: sort, state_id: '2', created_by: '1', updated_by: '1', tag_id: '1', duration: '00:00:00:00')
       @medium.save
 
-      @link = Link.new(folder_id: db_folder, medium_id: @medium.id)
+      medium_id = (@medium.id).to_s
+
+      @link = Link.new(folder_id: db_folder, medium_id: medium_id)
       @link.save
+
+      FileUtils.mkdir_p('public/STORAGE/A/1000/' + medium_id)
+      FileUtils.mkdir_p('public/TMP/' + medium_id)
+      FileUtils.cp(ingest_directory + file, 'public/TMP/' + medium_id + '/SRC_' + medium_id + file_extname)
+      FileUtils.mv(ingest_directory + file, ingest_directory + 'DONE/' + file)
+
+      TranscodeJob.perform_later(medium_id, 1)
 
     end
   end

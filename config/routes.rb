@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :transcodes
   resources :workflows
   resources :folders
   resources :states
