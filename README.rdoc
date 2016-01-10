@@ -11,7 +11,7 @@
 - rails generate scaffold Setting key:string value:string
 - rails generate scaffold Setting key:string value:string
 - rails generate scaffold Metadata medium_id:integer key:string value:string
-- rails generate scaffold Transcode title:string active:boolean profile:string
+- rails generate scaffold Transcode title:string profile:string
 
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
