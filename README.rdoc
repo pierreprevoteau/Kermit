@@ -9,7 +9,9 @@
 - rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
 - rails generate scaffold Workflow title:string kind:string active:boolean storage_folder:string db_folder:integer
 - rails generate scaffold Setting key:string value:string
+- rails generate scaffold Setting key:string value:string
 - rails generate scaffold Metadata medium_id:integer key:string value:string
+- rails generate scaffold Transcode title:string active:boolean profile:string
 
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
