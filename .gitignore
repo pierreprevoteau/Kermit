@@ -15,10 +15,10 @@
 /vendor/bundle/
 /vendor/ruby/
 
-/public/STORAGE/
-/public/IN/
-/public/OUT/
-/public/TMP/
+/public/STORAGE/*
+/public/IN/*
+/public/OUT/*
+/public/TMP/*
 
 # minimal Rails specific artifacts
 db/*.sqlite3

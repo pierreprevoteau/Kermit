@@ -5,12 +5,6 @@ class WorkflowsController < ApplicationController
   # GET /workflows.json
   def index
     @workflows = Workflow.all
-
-    @imports = Workflow.all.where(kind: "import_job", active: true)
-    @imports.each do |import|
-      ImportJob.perform_later(import.title, import.kind, import.storage_folder, import.db_folder)
-    end
-
   end
 
   # GET /workflows/1
