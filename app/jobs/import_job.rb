@@ -45,6 +45,9 @@ class ImportJob < ActiveJob::Base
 
       TranscodeJob.perform_later(medium_id, 1)
 
+      FileUtils.mv("public/TMP/" + medium_id + "/LR_" + medium_id + file_extname, "public/STORAGE/A/1000/" + medium_id + "/LR_" + medium_id + file_extname)
+
+      @medium.update(state_id: '1')
     end
   end
 end

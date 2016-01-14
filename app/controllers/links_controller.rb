@@ -21,6 +21,14 @@ class LinksController < ApplicationController
   def edit
   end
 
+  def duplicate
+    @link = Link.new(medium_id: medium_id, folder_id: folder_id)
+  end
+
+  def move
+    @link.update(link_params)
+  end
+
   # POST /links
   # POST /links.json
   def create
