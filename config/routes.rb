@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   resources :metadata
   resources :technicals
   get 'links/duplicate'
-  get 'links/move'
-  resources :links, :collection => {:duplicate => :put, :move => :put}
+  resources :links do
+    member do
+      get 'duplicate'
+    end
+  end
   resources :media
   get 'pages/home'
   get 'pages/dev'

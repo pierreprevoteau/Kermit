@@ -22,11 +22,11 @@ class LinksController < ApplicationController
   end
 
   def duplicate
-    @link = Link.new(medium_id: medium_id, folder_id: folder_id)
-  end
-
-  def move
-    @link.update(link_params)
+    duplicate_link_id = params[:id]
+    @link = Link.find(duplicate_link_id)
+    @new_link = Link.new(:medium_id => @link.medium_id, :folder_id => @link.folder_id)
+    @new_link.save
+    redirect_to links_url
   end
 
   # POST /links
