@@ -21,12 +21,22 @@ class LinksController < ApplicationController
   def edit
   end
 
+  def move
+    moved_folder_id = params[:folder_id]
+    moved_link_id = params[:id]
+    @link = Link.find(moved_link_id)
+    @link.update_attributes(:folder_id => moved_folder_id)
+    session[:return_to] ||= request.referer
+    redirect_to session.delete(:return_to)
+  end
+
   def duplicate
     duplicate_link_id = params[:id]
     @link = Link.find(duplicate_link_id)
     @new_link = Link.new(:medium_id => @link.medium_id, :folder_id => @link.folder_id)
     @new_link.save
-    redirect_to links_url
+    session[:return_to] ||= request.referer
+    redirect_to session.delete(:return_to)
   end
 
   # POST /links
@@ -63,10 +73,8 @@ class LinksController < ApplicationController
   # DELETE /links/1.json
   def destroy
     @link.destroy
-    respond_to do |format|
-      format.html { redirect_to links_url, notice: 'Link was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    session[:return_to] ||= request.referer
+    redirect_to session.delete(:return_to)
   end
 
   private

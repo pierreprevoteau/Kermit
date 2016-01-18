@@ -10,6 +10,12 @@ class PagesController < ApplicationController
     current_medium_id = params[:current_medium_id]
     end
 
+    if params[:current_link_id].nil?
+    @current_link_id = "0"
+    else
+    @current_link_id = params[:current_link_id]
+    end
+
 	  if params[:current_folder_id].nil?
 		  @links = Link.all.where(folder_id: nil)
       @folders = Folder.all.where(parent_id: nil)
@@ -27,7 +33,7 @@ class PagesController < ApplicationController
 	  end
 
   end
-  
+
   def dev
     @imports = Workflow.all.where(kind: "import_job", active: true)
     @imports.each do |import|

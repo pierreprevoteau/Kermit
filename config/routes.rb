@@ -8,10 +8,11 @@ Rails.application.routes.draw do
   resources :technicals
   resources :metadata
   resources :technicals
-  get 'links/duplicate'
+  get 'links/move'
   resources :links do
     member do
       get 'duplicate'
+      put 'move'
     end
   end
   resources :media

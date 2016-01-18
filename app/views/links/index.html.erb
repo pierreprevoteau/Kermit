@@ -7,7 +7,7 @@
     <tr>
       <th>Medium</th>
       <th>Folder</th>
-      <th colspan="4"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -18,8 +18,9 @@
         <td><%= link.folder.title %></td>
         <td><%= link_to 'Show', link %></td>
         <td><%= link_to 'Edit', edit_link_path(link) %></td>
-        <td><%= link_to 'Duplicate', links_duplicate_path(:id => link.id) %></td>
-        <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Duplicate', duplicate_link_path(:id => link.id) %></td>
+        <td><%= link_to 'Move', links_move_path(:id => link.id, :folder_id => 1) %></td>
+        <td><%= link_to 'Destroy', link, method: :delete %></td>
       </tr>
     <% end %>
   </tbody>
