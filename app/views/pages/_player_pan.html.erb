@@ -2,8 +2,12 @@
 <div class="panel panel-default">
   <div class="panel-heading"><strong><%= medium.title %></strong> - <span class="label" style="color: <%= medium.tag.tx_color %>; background-color: <%= medium.tag.bg_color %>; border: 1px solid <%= medium.tag.bd_color %>;"><%= medium.tag.title %></span></div>
   <div class="panel-body" style="padding: 0px;">
-
-  <%= videojs_rails sources: { mp4: @current_media_path }, setup: "{}", controls: true, width:"auto", height:"250" %>
+    <video style='width: 100%' id="example_video_1" class="video-js vjs-default-skin"
+    controls preload="auto" width="auto" height='240'
+    poster="<%= @current_thumb_path %>"
+    data-setup='{"example_option":true}'>
+      <source src="<%= @current_media_path %>" type='video/mp4' />
+</video>
   <ul class="nav nav-tabs nav-justified" role="tablist">
     <li role="presentation" class="active"><a href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">Metadata</a></li>
     <li role="presentation"><a href="#technique" aria-controls="technique" role="tab" data-toggle="tab">Technique</a></li>
