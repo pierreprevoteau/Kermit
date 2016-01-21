@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :transcodes
   resources :workflows
+  get 'folders/manage'
   resources :folders
   resources :states
   resources :media

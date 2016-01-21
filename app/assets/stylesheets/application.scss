@@ -23,3 +23,9 @@
  .content-body{
     margin-top: 70px;
  }
+
+ //videojs
+ .vjs-default-skin.vjs-paused .vjs-big-play-button
+{
+display: none;
+}

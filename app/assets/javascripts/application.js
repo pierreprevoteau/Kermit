@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require videojs
 //= require treeview
+//= require gtreetable
 //= require_tree .
 
 //init tooltips

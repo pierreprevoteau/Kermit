@@ -27,6 +27,9 @@ class FoldersController < ApplicationController
   def show
   end
 
+  def manage
+  end
+
   # GET /folders/new
   def new
     @folder = Folder.new
