@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :technicals
   resources :transcodes
   resources :workflows
   get 'folders/manage'

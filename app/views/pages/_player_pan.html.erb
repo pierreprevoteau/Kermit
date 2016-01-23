@@ -29,7 +29,7 @@
     </div>
     <div role="tabpanel" class="tab-pane" id="technique">
       <% @technicals.each do |technical| %>
-        <strong><%= technical.general_duration_media %></strong><br>
+        <strong><%= technical.key %></strong> : <%= technical.value %><br>
       <% end %>
     </div>
     <div role="tabpanel" class="tab-pane" id="messages">
