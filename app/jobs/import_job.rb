@@ -48,7 +48,7 @@ class ImportJob < ActiveJob::Base
 
       ThumbJob.perform_later(medium_id)
       FileUtils.mv("public/TMP/" + medium_id + "/THUMB_" + medium_id + ".png", "public/STORAGE/A/1000/" + medium_id + "/THUMB_" + medium_id + ".png")
-
+      DurationJob.perform_later(medium_id)
       @medium.update(state_id: '1')
     end
   end

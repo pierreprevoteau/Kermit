@@ -8,10 +8,10 @@
 - rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
 - rails generate scaffold Workflow title:string kind:string active:boolean storage_folder:string db_folder:integer
 - rails generate scaffold Setting key:string value:string
-- rails generate scaffold Setting key:string value:string
 - rails generate scaffold Metadata medium_id:integer key:string value:string
 - rails generate scaffold Technical medium_id:integer key:string value:string
 - rails generate scaffold Transcode title:string profile:string
+- rails generate scaffold Comment user_id:integer medium_id:integer content:text
 
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
@@ -30,3 +30,4 @@
 - Use **Savon** for webservices
 - Use **Mediainfo** for metadata
 - Use **Ffmpeg** and **ffmbc** for transcode
+- Use **MP4BOX** for dash

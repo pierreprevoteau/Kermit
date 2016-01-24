@@ -25,7 +25,12 @@
         <td><i class="fa <%= link.medium.sort.icon %> fa-2x" style="color: <%= link.medium.state.bd_color %>;" data-toggle="tooltip" data-placement="top" title="<%= link.medium.state.title %>"></i></td>
         <td><strong><%= link_to link.medium.title, pages_home_path(current_folder_id: link.folder_id, current_medium_id: link.medium_id, current_link_id: link.id) %></strong></td>
         <td><span class="label" style="color: <%= link.medium.tag.tx_color %>; background-color: <%= link.medium.tag.bg_color %>; border: 1px solid <%= link.medium.tag.bd_color %>;"><%= link.medium.tag.title %></span></td>
-        <td><%= link.medium.duration %></td>
+        <td><% if (link.technical).empty? == true %>
+                --:--:--:--
+            <% else %>
+                <%= link.technical.first.value %>
+            <% end %>
+        </td>
         <td><%= link.medium.created_at.strftime("%d/%m/%Y %HH%M") %></td>
       </tr>
       <% end %>
