@@ -69,6 +69,6 @@ class WorkflowsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def workflow_params
-      params.require(:workflow).permit(:title, :kind, :active, :storage_folder, :db_folder)
+      params.require(:workflow).permit(:title, :kind, :active, :storage_folder, :db_folder, :transcode_id)
     end
 end

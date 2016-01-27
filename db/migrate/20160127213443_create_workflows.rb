@@ -6,6 +6,7 @@ class CreateWorkflows < ActiveRecord::Migration
       t.boolean :active
       t.string :storage_folder
       t.integer :db_folder
+      t.integer :transcode_id
 
       t.timestamps null: false
     end

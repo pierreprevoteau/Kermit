@@ -1,12 +1,12 @@
 == MEMO
 
-- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string duration:string
+- TODO REMOVE DURATION * rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string
 - rails generate scaffold Link medium_id:integer folder_id:integer
 - rails generate scaffold State title:string bd_color:string
 - rails generate scaffold Sort title:string icon:string
 - rails generate scaffold Folder title:string parent_id:integer
 - rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
-- rails generate scaffold Workflow title:string kind:string active:boolean storage_folder:string db_folder:integer
+- rails generate scaffold Workflow title:string kind:string active:boolean storage_folder:string db_folder:integer transcode_id:integer
 - rails generate scaffold Setting key:string value:string
 - rails generate scaffold Metadata medium_id:integer key:string value:string
 - rails generate scaffold Technical medium_id:integer key:string value:string

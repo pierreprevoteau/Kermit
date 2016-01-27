@@ -25,5 +25,10 @@
   <%= @workflow.db_folder %>
 </p>
 
+<p>
+  <strong>Transcode:</strong>
+  <%= @workflow.transcode_id %>
+</p>
+
 <%= link_to 'Edit', edit_workflow_path(@workflow) %> |
 <%= link_to 'Back', workflows_path %>

@@ -18,7 +18,7 @@ class WorkflowsControllerTest < ActionController::TestCase
 
   test "should create workflow" do
     assert_difference('Workflow.count') do
-      post :create, workflow: { active: @workflow.active, db_folder: @workflow.db_folder, kind: @workflow.kind, storage_folder: @workflow.storage_folder, title: @workflow.title }
+      post :create, workflow: { active: @workflow.active, db_folder: @workflow.db_folder, kind: @workflow.kind, storage_folder: @workflow.storage_folder, title: @workflow.title, transcode_id: @workflow.transcode_id }
     end
 
     assert_redirected_to workflow_path(assigns(:workflow))
@@ -35,7 +35,7 @@ class WorkflowsControllerTest < ActionController::TestCase
   end
 
   test "should update workflow" do
-    patch :update, id: @workflow, workflow: { active: @workflow.active, db_folder: @workflow.db_folder, kind: @workflow.kind, storage_folder: @workflow.storage_folder, title: @workflow.title }
+    patch :update, id: @workflow, workflow: { active: @workflow.active, db_folder: @workflow.db_folder, kind: @workflow.kind, storage_folder: @workflow.storage_folder, title: @workflow.title, transcode_id: @workflow.transcode_id }
     assert_redirected_to workflow_path(assigns(:workflow))
   end
 

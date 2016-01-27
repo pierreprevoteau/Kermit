@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :workflows
   resources :comments
   resources :technicals
   resources :transcodes

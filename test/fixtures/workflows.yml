@@ -6,6 +6,7 @@ one:
   active: false
   storage_folder: MyString
   db_folder: 1
+  transcode_id: 1
 
 two:
   title: MyString
@@ -13,3 +14,4 @@ two:
   active: false
   storage_folder: MyString
   db_folder: 1
+  transcode_id: 1
