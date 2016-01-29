@@ -12,7 +12,7 @@
 - rails generate scaffold Technical medium_id:integer key:string value:string
 - rails generate scaffold Transcode title:string profile:string
 - rails generate scaffold Comment user_id:integer medium_id:integer content:text
-
+-----------------------------------------------
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
 - Use **Devise** for administration loggin
