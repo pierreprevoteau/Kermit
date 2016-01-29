@@ -25,15 +25,15 @@
   - https://github.com/alanpeabody/resque-job-stats
   - https://github.com/kmullin/resque-sliders
   - https://github.com/ilyakatz/resque-history
-- Use **Net Sftp** for pull and push ftp
-- Use **Wash Out** for webservices
+- Use **NetSftp** for pull and push ftp
+- Use **WashOut** for webservices
 - Use **Savon** for webservices
 - Use **Mediainfo** for metadata
-- Use **Ffmpeg** and **ffmbc** for transcode
+- Use **Ffmpeg** and **Ffmbc** for transcode
 - Use **MP4BOX** for dash
-- Use **Wash Out** for webservices in : https://github.com/inossidabile/wash_out
+- Use **WashOut** for webservices in : https://github.com/inossidabile/wash_out
 - Use **Savon** for webservices out : https://github.com/savonrb/savon
-- Use **Public Activity** for notification : https://github.com/pokonski/public_activity
+- Use **PublicActivity** for notification : https://github.com/pokonski/public_activity
 - Use **Grape** for webservices : https://github.com/intridea/grape
   - http://www.synbioz.com/blog/api_ruby_rails_gem_grape
   - http://code.dblock.org/2011/05/04/grape-api-authentication-w-devise.html
