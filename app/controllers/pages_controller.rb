@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   def home
     unc_url = "http://0.0.0.0:3000/"
     unc_base = "STORAGE/"
@@ -37,6 +38,7 @@ class PagesController < ApplicationController
   end
 
   def dev
+
     @imports = Workflow.all.where(kind: "import_job", active: true)
     @imports.each do |import|
       ImportJob.perform_later(import.title, import.kind, import.storage_folder, import.db_folder)

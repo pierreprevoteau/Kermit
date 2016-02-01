@@ -1,8 +1,10 @@
 module PathFinder
+
     def get_tmp_path(medium_id)
           #From TMP directory
           tmp_directory = "public/TMP/" + medium_id + "/"
     end
+
     def get_stg_path(medium_id)
           #From STORAGE directory
           if (1..999999).include?(medium_id)
