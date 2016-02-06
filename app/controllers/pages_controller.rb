@@ -38,12 +38,14 @@ class PagesController < ApplicationController
   end
 
   def dev
-
     @imports = Workflow.all.where(kind: "import_job", active: true)
     @imports.each do |import|
       ImportJob.perform_later(import.title, import.kind, import.storage_folder, import.db_folder)
     end
     ExportJob.perform_later(123, 3)
+  end
+
+  def lgin
   end
 
 end

@@ -22,9 +22,10 @@ Rails.application.routes.draw do
   devise_for :users
 
   get 'pages/home'
+  get 'pages/lgin'
   get 'pages/dev'
   get 'links/move'
   get 'folders/manage'
 
-  root to: 'pages#home'
+  root to: 'pages#lgin'
 end

@@ -12,7 +12,10 @@ class ExportJob < ActiveJob::Base
     puts "Performing " + @workflow.kind + " : " + @workflow.title
     puts "----------------------------------------------------------------"
 
-    
+    ApplicationController.get_tmp_path(medium_id)
+    ApplicationController.get_stg_path(medium_id)
+
+
 
   end
 end
