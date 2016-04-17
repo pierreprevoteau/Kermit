@@ -1,19 +1,17 @@
-# MEMO
+## MEMO
 
-- TODO REMOVE DURATION * rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string
+- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string hash:string
 - rails generate scaffold Link medium_id:integer folder_id:integer
-- rails generate scaffold State title:string bd_color:string
-- rails generate scaffold Sort title:string icon:string
+- rails generate scaffold State title:string bg_color:string bd_color:string tx_color:string
+- rails generate scaffold Sort title:string icon:string extension:string
 - rails generate scaffold Folder title:string parent_id:integer
 - rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
-- rails generate scaffold Workflow title:string kind:string active:boolean storage_folder:string db_folder:integer transcode_id:integer
+- rails generate scaffold Workflow title:string kind:string active:boolean storage_folder:string db_folder:integer
 - rails generate scaffold Setting key:string value:string
 - rails generate scaffold Metadata medium_id:integer key:string value:string
 - rails generate scaffold Technical medium_id:integer key:string value:string
-- rails generate scaffold Transcode title:string profile:string
 - rails generate scaffold Comment user_id:integer medium_id:integer content:text
-- 
------------------------------------------------
+
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
 - Use **Devise** for administration loggin
@@ -42,34 +40,36 @@
 ------------------------------------
 
 ## Onsite storage
+- Use a Nas storage mounted with CIFS. With 26 letters we can reach 26 000 000 assets. Path look like :
 
-- Use a Nas storage mounted with CIFS. Path look like :
-
-* 0/ROOT
-* 1/TEMP
-* 1/IN
-* 1/OUT
-* 1/STORAGE
-* 2/A
-* 3/1000
-* 4/1115
-* 5/TH1_1115.jpg
-* 5/TH2_1115.jpg
-* 5/HR_1115.mxf
-* 5/LR_1115.mpeg
-* 5/MD_1115.xml
-* 2/B
+* /ROOT
+* /ROOT/TEMP
+* /ROOT/IN
+* /ROOT/OUT
+* /ROOT/STORAGE
+* /ROOT/STORAGE/A
+* /ROOT/STORAGE/A/1000
+* /ROOT/STORAGE/A/1000/1115
+* /ROOT/STORAGE/A/1000/1115/TH1_1115.jpg
+* /ROOT/STORAGE/A/1000/1115/TH2_1115.jpg
+* /ROOT/STORAGE/A/1000/1115/HR_1115.mxf
+* /ROOT/STORAGE/A/1000/1115/LR_1115.mpeg
+* /ROOT/STORAGE/A/1000/1115/MD_1115.xml
+* /ROOT/STORAGE/A/2000
+* /ROOT/STORAGE/B
 
 ## Offsite storage
 Add support for Backblaze B2 cloud storage => realy affordable compared to AWS !
 One private bucket per Kermit instance
 
-### Onsite storage Settings
+### Settings
 - nas_uri
 - nas_username
 - nas_password
-
-### Offsite storage Settings
 - b2_account_id
 - b2_application_key
 - b2_bucket_id
+- lr_profile
+- hr_profile
+- blacklist_ext
+- whitelist_ext
