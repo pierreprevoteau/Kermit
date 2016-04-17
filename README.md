@@ -12,6 +12,7 @@
 - rails generate scaffold Technical medium_id:integer key:string value:string
 - rails generate scaffold Transcode title:string profile:string
 - rails generate scaffold Comment user_id:integer medium_id:integer content:text
+- 
 -----------------------------------------------
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
@@ -37,36 +38,37 @@
 - Use **Grape** for webservices : https://github.com/intridea/grape
   - http://www.synbioz.com/blog/api_ruby_rails_gem_grape
   - http://code.dblock.org/2011/05/04/grape-api-authentication-w-devise.html
-  - 
+
 ------------------------------------
 
 ## Onsite storage
--Use a Nas storage mounted with CIFS. Path look like :
-+ ROOT
-++ TEMP
-++ IN
-++ OUT
-++ STORAGE
-+++ A
-++++ 1000
-+++++ 1115
-++++++ TH1_1115.jpg
-++++++ TH2_1115.jpg
-++++++ HR_1115.mxf
-++++++ LR_1115.mpeg
-++++++ MD_1115.xml
-+++ B
+- Use a Nas storage mounted with CIFS. Path look like :
+- 
+* ROOT
+** TEMP
+** IN
+** OUT
+** STORAGE
+*** A
+**** 1000
+***** 1115
+****** TH1_1115.jpg
+****** TH2_1115.jpg
+****** HR_1115.mxf
+****** LR_1115.mpeg
+****** MD_1115.xml
+*** B
 
 ## Offsite storage
 Add support for Backblaze B2 cloud storage => realy affordable compared to AWS !
 One private bucket per Kermit instance
 
 ### Onsite storage Settings
--nas_uri
--nas_username
--nas_password
+- nas_uri
+- nas_username
+- nas_password
 
 ### Offsite storage Settings
--b2_account_id
--b2_application_key
--b2_bucket_id
+- b2_account_id
+- b2_application_key
+- b2_bucket_id
