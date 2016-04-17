@@ -42,22 +42,23 @@
 ------------------------------------
 
 ## Onsite storage
+
 - Use a Nas storage mounted with CIFS. Path look like :
-- 
-* ROOT
-** TEMP
-** IN
-** OUT
-** STORAGE
-*** A
-**** 1000
-***** 1115
-****** TH1_1115.jpg
-****** TH2_1115.jpg
-****** HR_1115.mxf
-****** LR_1115.mpeg
-****** MD_1115.xml
-*** B
+
+* 0/ROOT
+* 1/TEMP
+* 1/IN
+* 1/OUT
+* 1/STORAGE
+* 2/A
+* 3/1000
+* 4/1115
+* 5/TH1_1115.jpg
+* 5/TH2_1115.jpg
+* 5/HR_1115.mxf
+* 5/LR_1115.mpeg
+* 5/MD_1115.xml
+* 2/B
 
 ## Offsite storage
 Add support for Backblaze B2 cloud storage => realy affordable compared to AWS !
