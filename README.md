@@ -1,4 +1,4 @@
-== MEMO
+# MEMO
 
 - TODO REMOVE DURATION * rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string
 - rails generate scaffold Link medium_id:integer folder_id:integer
@@ -37,3 +37,5 @@
 - Use **Grape** for webservices : https://github.com/intridea/grape
   - http://www.synbioz.com/blog/api_ruby_rails_gem_grape
   - http://code.dblock.org/2011/05/04/grape-api-authentication-w-devise.html
+
+------------------
