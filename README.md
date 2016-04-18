@@ -1,19 +1,22 @@
 ## MEMO
 
-- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string hash:string
+- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string:multi
 - rails generate scaffold Link medium_id:integer folder_id:integer
+- rails generate scaffold Object medium_id:integer file_name:string
 - rails generate scaffold State title:string bg_color:string bd_color:string tx_color:string
 - rails generate scaffold Sort title:string icon:string extension:string
 - rails generate scaffold Folder title:string parent_id:integer
 - rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
-- rails generate scaffold Import_Workflow title:string active:boolean storage_folder:string db_folder:integer
-- rails generate scaffold Export_Workflow title:string active:boolean db_folder:integer storage_folder:string
-- rails generate scaffold Purge_Workflow title:string active:boolean db_folder:integer storage_folder:string
+- rails generate scaffold Import_Workflow title:string active:boolean storage_path:string folder_id:integer 
+- rails generate scaffold Export_Workflow title:string active:boolean folder_id:integer storage_path:string 
+- rails generate scaffold Purge_Workflow title:string active:boolean folder_id:integer kill_offset:integer
 - rails generate scaffold Setting key:string value:string
 - rails generate scaffold Metadata medium_id:integer key:string value:string
 - rails generate scaffold Technical medium_id:integer key:string value:string
 - rails generate scaffold Comment user_id:integer medium_id:integer content:text
-
+- rails generate scaffold User GENERATE FROM DEVISE + user_groupe_id:integer
+- rails generate scaffold User_group title:string 
+- rails generate scaffold User_right user_group_id:integer folder_id:integer key:string value:string
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
 - Use **Devise** for administration loggin
@@ -74,14 +77,29 @@ One private bucket per Kermit instance
 - lr_profile
 - hr_profile
 - blacklist_ext
-- whitelist_ext
 
 ### Jobs
 - hash_creator
 - hash_checker
-- storage_concistancy_checker
+- concistancy_checker
 - thumb_creator
 - duration_creator
 - workflow_import
 - workflow_export
 - workflow_purge
+
+### States
+- 0:offline
+- 1:online
+- 2:archive
+- 3:partial
+
+### Sorts
+- 0:video
+- 1:audio
+- 2:image
+
+### User_right (chmod like 777)
+- folder 
+- media
+- comment
