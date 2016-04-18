@@ -65,7 +65,7 @@
 
 ## Offsite storage
 Add support for Backblaze B2 cloud storage => realy affordable compared to AWS !
-One private bucket per Kermit instance
+One private bucket per Kermit instance or one main private bucket and other private bucket sync with workflows 
 
 ### Settings
 - nas_uri
