@@ -6,7 +6,9 @@
 - rails generate scaffold Sort title:string icon:string extension:string
 - rails generate scaffold Folder title:string parent_id:integer
 - rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
-- rails generate scaffold Workflow title:string kind:string active:boolean storage_folder:string db_folder:integer
+- rails generate scaffold Import_Workflow title:string active:boolean storage_folder:string db_folder:integer
+- rails generate scaffold Export_Workflow title:string active:boolean db_folder:integer storage_folder:string
+- rails generate scaffold Purge_Workflow title:string active:boolean db_folder:integer storage_folder:string
 - rails generate scaffold Setting key:string value:string
 - rails generate scaffold Metadata medium_id:integer key:string value:string
 - rails generate scaffold Technical medium_id:integer key:string value:string
@@ -73,3 +75,13 @@ One private bucket per Kermit instance
 - hr_profile
 - blacklist_ext
 - whitelist_ext
+
+### Jobs
+- hash_creator
+- hash_checker
+- storage_concistancy_checker
+- thumb_creator
+- duration_creator
+- workflow_import
+- workflow_export
+- workflow_purge
