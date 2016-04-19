@@ -1,22 +1,25 @@
 ## MEMO
 
-- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string:multi
-- rails generate scaffold Link medium_id:integer folder_id:integer
-- rails generate scaffold Object medium_id:integer file_name:string
-- rails generate scaffold State title:string bg_color:string bd_color:string tx_color:string
-- rails generate scaffold Sort title:string icon:string extension:string
-- rails generate scaffold Folder title:string parent_id:integer
-- rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string
-- rails generate scaffold Import_Workflow title:string active:boolean storage_path:string folder_id:integer 
-- rails generate scaffold Export_Workflow title:string active:boolean folder_id:integer storage_path:string 
-- rails generate scaffold Purge_Workflow title:string active:boolean folder_id:integer kill_offset:integer
-- rails generate scaffold Setting key:string value:string
+- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string:multi 
+- rails generate scaffold Link medium_id:integer folder_id:integer 
+- rails generate scaffold Object medium_id:integer file_name:string 
+- rails generate scaffold State title:string bg_color:string bd_color:string tx_color:string => CACHE
+- rails generate scaffold Sort title:string icon:string extension:string => CACHE
+- rails generate scaffold Folder title:string parent_id:integer => CACHE
+- rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string => CACHE
+- rails generate scaffold Import_Workflow title:string active:boolean storage_path:string folder_id:integer => CACHE
+- rails generate scaffold Export_Workflow title:string active:boolean folder_id:integer storage_path:string => CACHE
+- rails generate scaffold Purge_Workflow title:string active:boolean folder_id:integer day_offset:integer => CACHE
+- rails generate scaffold Archive_Workflow title:string active:boolean folder_id:integer day_offset:integer => CACHE
+- rails generate scaffold Setting key:string value:string => CACHE
 - rails generate scaffold Metadata medium_id:integer key:string value:string
+- rails generate scaffold Metadata_structure key:string title:string => CACHE
 - rails generate scaffold Technical medium_id:integer key:string value:string
+- rails generate scaffold Technical_structure key:string title:string => CACHE
 - rails generate scaffold Comment user_id:integer medium_id:integer content:text
-- rails generate scaffold User GENERATE FROM DEVISE + user_groupe_id:integer
-- rails generate scaffold User_group title:string 
-- rails generate scaffold User_right user_group_id:integer folder_id:integer key:string value:string
+- rails generate scaffold User GENERATE FROM DEVISE + user_groupe_id:integer => CACHE
+- rails generate scaffold User_group title:string => CACHE
+- rails generate scaffold User_right user_group_id:integer folder_id:integer key:string value:string => CACHE
 - Use **Postgre** for SQL
 - Use **Redis** for NOSQL
 - Use **Devise** for administration loggin
@@ -41,6 +44,7 @@
 - Use **Grape** for webservices : https://github.com/intridea/grape
   - http://www.synbioz.com/blog/api_ruby_rails_gem_grape
   - http://code.dblock.org/2011/05/04/grape-api-authentication-w-devise.html
+- Use **IBMWatson** for Speech to Text 
 
 ------------------------------------
 
@@ -65,7 +69,7 @@
 
 ## Offsite storage
 Add support for Backblaze B2 cloud storage => realy affordable compared to AWS !
-One private bucket per Kermit instance or one main private bucket and other private bucket sync with workflows 
+One private bucket per Kermit instance or one main private bucket and other private bucket sync with workflows ?
 
 ### Settings
 - nas_uri
@@ -87,6 +91,7 @@ One private bucket per Kermit instance or one main private bucket and other priv
 - workflow_import
 - workflow_export
 - workflow_purge
+- workflow_archive
 
 ### States
 - 0:offline
@@ -100,6 +105,16 @@ One private bucket per Kermit instance or one main private bucket and other priv
 - 2:image
 
 ### User_right (chmod like 777)
-- folder 
+- folder
 - media
+- meta
 - comment
+
+### Objects and Filename
+- LR_1115.mpg => Lowres
+- HR_1115.mxf => Hires
+- MD_1115.xml => Metadata
+- MT_1115.xml => Technical
+- TH_1115.jpg => MainThumbnail
+- TH1_1115.jpg => SceneThumbnails
+- ST_1115.srt => Subtitle
