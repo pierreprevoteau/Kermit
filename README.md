@@ -1,5 +1,5 @@
 ## MEMO
-- Use **Postgre** for SQL
+- Use **Postgre** or **Crate.io** for SQL
 - Use **Redis** for NOSQL
 - Use **Devise** for administration loggin
 - Use **Resque** for joblist and cron
@@ -45,7 +45,7 @@
 - rails generate scaffold Comment user_id:integer medium_id:integer content:text
 - rails generate scaffold User GENERATE FROM DEVISE + user_groupe_id:integer => CACHE
 - rails generate scaffold User_group title:string => CACHE
-- rails generate scaffold User_right user_group_id:integer folder_id:integer key:string value:string => CACHE
+- rails generate scaffold User_group_right user_group_id:integer folder_id:integer key:string value:string => CACHE
 
 ## Onsite storage
 - Use a Nas storage mounted with CIFS. With 26 letters we can reach 26 000 000 assets. Path look like :
