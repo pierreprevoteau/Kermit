@@ -1,6 +1,7 @@
 ## MEMO
 - Use **Postgre** or **Crate.io** for SQL
 - Use **Redis** for NOSQL
+- Use **Elasticsearch** for search
 - Use **Devise** for administration loggin
 - Use **Resque** for joblist and cron
   - https://github.com/resque/resque-web
