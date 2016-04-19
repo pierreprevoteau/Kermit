@@ -1,6 +1,6 @@
 ## MEMO
 - Use **Postgre** or **Crate.io** for SQL
-- Use **Redis** for NOSQL
+- Use **Redis** for NOSQL Resque and cache
 - Use **Elasticsearch** for search
 - Use **Devise** for administration loggin
 - Use **Resque** for joblist and cron
@@ -69,7 +69,7 @@
 
 ## Offsite storage
 Add support for Backblaze B2 cloud storage => realy affordable compared to AWS !
-One private bucket per Kermit instance or one main private bucket and other private bucket sync with workflows ?
+One private bucket per Kermit instance.
 
 ## Settings
 - nas_uri
@@ -88,10 +88,10 @@ One private bucket per Kermit instance or one main private bucket and other priv
 - concistancy_checker
 - thumb_creator
 - duration_creator
-- workflow_import
-- workflow_export
-- workflow_purge
-- workflow_archive
+- workflow_importer
+- workflow_exporter
+- workflow_purger
+- workflow_archiver
 
 ## States
 - 0:offline
@@ -104,7 +104,7 @@ One private bucket per Kermit instance or one main private bucket and other priv
 - 1:audio
 - 2:image
 
-## User_right (chmod like 777)
+## User_right (chmod like rwx)
 - folder
 - media
 - meta
