@@ -26,7 +26,7 @@
 - Use **IBMWatson** for Speech to Text 
 
 ## Database
-- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:string:multi 
+- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:array
 - rails generate scaffold Link medium_id:integer folder_id:integer 
 - rails generate scaffold Object medium_id:integer file_name:string 
 - rails generate scaffold State title:string bg_color:string bd_color:string tx_color:string => CACHE
