@@ -1,5 +1,5 @@
 ## MEMO
-- Use **Postgre** or **Crate.io** for SQL
+- Use **Postgre** or **Crate.io** or **MongoDB** for SQL
 - Use **Redis** for NOSQL Resque and cache
 - Use **Elasticsearch** for search
 - Use **Devise** for administration loggin
