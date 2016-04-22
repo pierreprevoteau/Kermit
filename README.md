@@ -13,10 +13,8 @@
   - https://github.com/kmullin/resque-sliders
   - https://github.com/ilyakatz/resque-history
 - Use **NetSftp** for pull and push ftp
-- Use **WashOut** for webservices
-- Use **Savon** for webservices
 - Use **Mediainfo** for metadata
-- Use **Ffmpeg** and **Ffmbc** for transcode
+- Use **Ffmpeg** for transcode
 - Use **MP4BOX** for dash
 - Use **WashOut** for webservices in : https://github.com/inossidabile/wash_out
 - Use **Savon** for webservices out : https://github.com/savonrb/savon
