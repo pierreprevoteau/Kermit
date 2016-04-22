@@ -3,7 +3,7 @@
 - Use **Redis** for NOSQL Resque and cache
 - Use **Elasticsearch** ... you know, for search. Maybe with **Chewy** ?
 - Use **Devise** for administration loggin
-- Use **Resque** for joblist and cron
+- Use **Resque** or **Sidekiq** for joblist and cron
   - https://github.com/resque/resque-web
   - https://github.com/quirkey/resque-status
   - https://github.com/resque/resque-scheduler
