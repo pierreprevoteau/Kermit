@@ -1,7 +1,7 @@
 ## MEMO
 - Use **Postgre** or **Crate.io** or **Mongoid** for SQL
 - Use **Redis** for NOSQL Resque and cache
-- Use **Elasticsearch** ... you know, for search
+- Use **Elasticsearch** ... you know, for search maybe with **Chewy** ?
 - Use **Devise** for administration loggin
 - Use **Resque** for joblist and cron
   - https://github.com/resque/resque-web
@@ -27,9 +27,9 @@
 ## Database
 - rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:array
 - rails generate scaffold Link medium_id:integer folder_id:integer 
-- rails generate scaffold Object medium_id:integer file_name:string 
+- rails generate scaffold Object medium_id:integer file_name:string
 - rails generate scaffold State title:string bg_color:string bd_color:string tx_color:string => CACHE
-- rails generate scaffold Sort title:string icon:string extension:string => CACHE
+- rails generate scaffold Sort title:string icon:string extension:array => CACHE
 - rails generate scaffold Folder title:string parent_id:integer => CACHE
 - rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string => CACHE
 - rails generate scaffold Import_Workflow title:string active:boolean storage_path:string folder_id:integer => CACHE
