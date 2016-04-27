@@ -1,17 +1,9 @@
 ## MEMO
-- Use **Postgre** or **Crate.io** or **Mongoid** for SQL
+- Use **Mongoid** for SQL
 - Use **Redis** for NOSQL Resque and cache
 - Use **Elasticsearch** ... you know, for search. Maybe with **Chewy** ?
 - Use **Devise** for administration loggin
 - Use **Resque** or **Sidekiq** for joblist and cron
-  - https://github.com/resque/resque-web
-  - https://github.com/quirkey/resque-status
-  - https://github.com/resque/resque-scheduler
-  - https://github.com/thoward/resque-mission
-  - https://github.com/ono/resque-cleaner
-  - https://github.com/alanpeabody/resque-job-stats
-  - https://github.com/kmullin/resque-sliders
-  - https://github.com/ilyakatz/resque-history
 - Use **NetSftp** for pull and push ftp
 - Use **Mediainfo** for metadata
 - Use **Ffmpeg** for transcode
@@ -20,8 +12,6 @@
 - Use **Savon** for webservices out : https://github.com/savonrb/savon
 - Use **PublicActivity** for notification : https://github.com/pokonski/public_activity
 - Use **Grape** for webservices : https://github.com/intridea/grape
-  - http://www.synbioz.com/blog/api_ruby_rails_gem_grape
-  - http://code.dblock.org/2011/05/04/grape-api-authentication-w-devise.html
 - Use **IBMWatson** or **NuanceDev** for Speech to Text 
 
 ## Database
@@ -47,7 +37,7 @@
 - rails generate scaffold User_group_right user_group_id:integer folder_id:integer key:string value:string => CACHE
 
 ## Onsite storage
-- Use a Nas storage mounted with CIFS. With 26 letters we can reach 26 000 000 assets. Path look like :
+- Use a network storage mounted with NFS. With 26 letters we can reach 26 000 000 assets. Path look like :
 
 * /ROOT
 * /ROOT/TEMP
@@ -70,19 +60,13 @@ Add support for Backblaze B2 cloud storage => realy affordable compared to AWS !
 One private bucket per Kermit instance.
 
 ## Settings
-- nas_uri
-- nas_username
-- nas_password
 - b2_account_id
 - b2_application_key
 - b2_bucket_id
-- lr_profile
-- hr_profile
 - blacklist_ext
 
 ## Jobs
 - hash_creator
-- hash_checker
 - concistancy_checker
 - thumb_creator
 - duration_creator
@@ -107,6 +91,7 @@ One private bucket per Kermit instance.
 - media
 - meta
 - comment
+- workflow
 
 ## Objects and Filename
 - LR_1115.mpg => Lowres
