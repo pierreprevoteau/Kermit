@@ -114,5 +114,5 @@ One private bucket per Kermit instance.
 - MD_1115.xml => Metadata
 - MT_1115.xml => Technical
 - TH_1115.jpg => MainThumbnail
-- TH1_1115.jpg => SceneThumbnails
+- TH_1_1115.jpg => SceneThumbnails
 - ST_1115.srt => Subtitle
