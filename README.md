@@ -12,7 +12,7 @@
 - Use **Savon** for webservices out : https://github.com/savonrb/savon
 - Use **PublicActivity** for notification : https://github.com/pokonski/public_activity
 - Use **Grape** for webservices : https://github.com/intridea/grape
-- Use **IBMWatson** or **NuanceDev** for Speech to Text 
+- Use **IBMWatson** or **NuanceDev** or **authot** for Speech to Text 
 
 ## Database
 - rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:array
