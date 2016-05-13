@@ -1,4 +1,5 @@
 ## MEMO
+Rails version ? 
 - Use **Mongoid** for SQL
 - Use **Redis** for NOSQL Resque and cache
 - Use **Elasticsearch** ... you know, for search. Maybe with **Chewy** ?
@@ -12,6 +13,16 @@
 - Use **Savon** for webservices out : https://github.com/savonrb/savon
 - Use **PublicActivity** for notification : https://github.com/pokonski/public_activity
 - Use **Grape** for webservices : https://github.com/intridea/grape
+- Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text 
+ 
+Maybe switch to SailsJS ? 
+- Use **Mongodb** for SQL
+- Use **Redis** for NOSQL Resque and cache
+- Use **Elasticsearch** ... you know, for search. Maybe with **Chewy** ?
+- Use **Kue** for joblist and cron
+- Use **Mediainfo** for metadata
+- Use **Ffmpeg** and **BMX**  for transcode
+- Use **MP4BOX** for dash
 - Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text 
 
 ## Database
