@@ -15,7 +15,7 @@ Rails version :
 - Use **Grape** for webservices : https://github.com/intridea/grape
 - Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text and Visual Recognition
  
-SailsJS version
+SailsJS/AngularJS version
 - Use **Mongodb** for SQL
 - Use **Redis** for NOSQL Kue / cache / SocketIO
 - Use **Elasticsearch** ... you know, for search. Maybe with **Chewy** ?
