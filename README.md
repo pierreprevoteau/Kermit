@@ -13,7 +13,7 @@ Rails version :
 - Use **Savon** for webservices out : https://github.com/savonrb/savon
 - Use **PublicActivity** for notification : https://github.com/pokonski/public_activity
 - Use **Grape** for webservices : https://github.com/intridea/grape
-- Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text 
+- Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text and Visual Recognition
  
 SailsJS version
 - Use **Mongodb** for SQL
@@ -23,7 +23,7 @@ SailsJS version
 - Use **Mediainfo** for metadata
 - Use **Ffmpeg** and **BMX**  for transcode
 - Use **MP4BOX** for dash
-- Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text 
+- Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text and Visual Recognition
 
 ----------------
 
