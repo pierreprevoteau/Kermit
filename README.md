@@ -26,26 +26,85 @@ Maybe switch to SailsJS ?
 - Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text 
 
 ## Database
-- rails generate scaffold Media title:string sort_id:integer state_id:integer created_by:integer updated_by:integer tag_id:array
-- rails generate scaffold Link medium_id:integer folder_id:integer 
-- rails generate scaffold Object medium_id:integer file_name:string
-- rails generate scaffold State title:string bg_color:string bd_color:string tx_color:string => CACHE
-- rails generate scaffold Sort title:string icon:string extension:array => CACHE
-- rails generate scaffold Folder title:string parent_id:integer => CACHE
-- rails generate scaffold Tag title:string bg_color:string bd_color:string tx_color:string => CACHE
-- rails generate scaffold Import_Workflow title:string active:boolean storage_path:string folder_id:integer => CACHE
-- rails generate scaffold Export_Workflow title:string active:boolean folder_id:integer storage_path:string => CACHE
-- rails generate scaffold Purge_Workflow title:string active:boolean folder_id:integer day_offset:integer => CACHE
-- rails generate scaffold Archive_Workflow title:string active:boolean folder_id:integer day_offset:integer => CACHE
-- rails generate scaffold Setting key:string value:string => CACHE
-- rails generate scaffold Metadata medium_id:integer key:string value:string
-- rails generate scaffold Metadata_structure key:string title:string => CACHE
-- rails generate scaffold Technical medium_id:integer key:string value:string
-- rails generate scaffold Technical_structure key:string title:string => CACHE
-- rails generate scaffold Comment user_id:integer medium_id:integer content:text
-- rails generate scaffold User GENERATE FROM DEVISE + user_groupe_id:integer => CACHE
-- rails generate scaffold User_group title:string => CACHE
-- rails generate scaffold User_group_right user_group_id:integer folder_id:integer key:string value:string => CACHE
+* **Media** 
+	* title:string 
+	* sort_id:integer 
+	* state_id:integer 
+	* tag_id:array
+	* created_by:integer 
+	* updated_by:integer 
+* **Link**
+	* medium_id:integer 
+	* folder_id:integer 
+* **Object**
+	* medium_id:integer 
+	* file_name:string
+* **State** => CACHE
+	* title:string 
+	* bg_color:string 
+	* bd_color:string 
+	* tx_color:string 
+* **Sort** => CACHE
+	* title:string 
+	* icon:string 
+	* extension:array 
+* **Folder** => CACHE
+	* title:string 
+	* parent_id:integer 
+* **Tag** => CACHE
+	* title:string 
+	* bg_color:string 
+	* bd_color:string 
+	* tx_color:string 
+* **Import_Workflow** => CACHE
+	* title:string 
+	* active:boolean 
+	* storage_path:string 
+	* folder_id:integer
+* **Export_Workflow** => CACHE
+	* title:string 
+	* active:boolean 
+	* folder_id:integer 
+	* storage_path:string 
+* **Purge_Workflow** => CACHE
+	* title:string 
+	* active:boolean 
+	* folder_id:integer 
+	* day_offset:integer 
+* **Archive_Workflow** => CACHE
+	* title:string 
+	* active:boolean 
+	* folder_id:integer 
+	* day_offset:integer 
+* **Setting** => CACHE
+	* key:string 
+	* value:string
+* **Metadata** 
+	* medium_id:integer 
+	* key:string value:string
+* **Metadata_structure** => CACHE 
+	* key:string 
+	* title:string 
+* **Technical**
+	* medium_id:integer 
+	* key:string 
+	* value:string
+* **Technical_structure** => CACHE 
+	* key:string 
+	* title:string 
+* **Comment**
+	* user_id:integer 
+	* medium_id:integer 
+	* content:text
+* **User** => CACHE
+	* GENERATE FROM DEVISE 
+	* user_groupe_id:integer
+* **User_group**
+	* title:string
+* **User_group_right** => CACHE
+	* user_group_id:integer
+	* folder_id:integer
+	* key:string value:string 
 
 ## Onsite storage
 - Use a network storage mounted with NFS. With 26 letters we can reach 26 000 000 assets. Path look like :
