@@ -204,7 +204,7 @@ title | string | true
 
 Title | Type | Required
 --- | --- | ---	
-title | integer | true
+user_group_id | integer | true
 folder_id | integer | false
 key | string | true
 value | string | true
