@@ -27,90 +27,96 @@ Maybe switch to SailsJS ?
 
 ## Database
 * **Media** 
-	* title:string 
-	* sort_id:integer 
-	* state_id:integer 
+	* title:string:required
+	* sort_id:integer:required
+	* state_id:integer:required
 	* tag_id:array
-	* created_by:integer 
-	* updated_by:integer 
+	* created_by:integer:required 
+	* updated_by:integer:required
 * **Link**
-	* medium_id:integer 
-	* folder_id:integer 
+	* medium_id:integer:required
+	* folder_id:integer:required
 * **Object**
-	* medium_id:integer 
-	* file_name:string
+	* medium_id:integre:required
+	* file_name:string:required
 * **State** => CACHE
-	* title:string 
-	* bg_color:string 
-	* bd_color:string 
-	* tx_color:string 
+	* title:string:required
+	* bg_color:string:required
+	* bd_color:string:required
+	* tx_color:string:required
 * **Sort** => CACHE
-	* title:string 
-	* icon:string 
-	* extension:array 
+	* title:string:required
+	* icon:string:required
+	* extension:array:required
 * **Folder** => CACHE
-	* title:string 
-	* parent_id:integer 
+	* title:string:required
+	* parent_id:integer:required
 * **Tag** => CACHE
-	* title:string 
-	* bg_color:string 
-	* bd_color:string 
-	* tx_color:string 
+	* title:string:required
+	* bg_color:string:required
+	* bd_color:string:required
+	* tx_color:string:required
 * **Import_Workflow** => CACHE
-	* title:string 
-	* active:boolean 
-	* storage_path:string 
-	* folder_id:integer
+	* title:string:required
+	* active:boolean:required
+	* storage_path:string:required
+	* folder_id:integer:required
 * **Export_Workflow** => CACHE
-	* title:string 
-	* active:boolean 
-	* folder_id:integer 
-	* storage_path:string 
+	* title:string:required
+	* active:boolean:required
+	* folder_id:integer:required
+	* storage_path:string:required
 * **Purge_Workflow** => CACHE
-	* title:string 
-	* active:boolean 
-	* folder_id:integer 
-	* day_offset:integer 
+	* title:string:required
+	* active:boolean:required
+	* recursive:boolean:required
+	* folder_id:integer:required
+	* day_offset:integer:required
 * **Archive_Workflow** => CACHE
-	* title:string 
-	* active:boolean 
-	* folder_id:integer 
-	* day_offset:integer 
+	* title:string:required
+	* active:boolean:required
+	* recursive:boolean:required
+	* folder_id:integer:required
+	* day_offset:integer:required
 * **Setting** => CACHE
-	* key:string 
-	* value:string
+	* key:string:required
+	* value:string:required
 * **Metadata** 
-	* medium_id:integer 
-	* key:string value:string
-* **Metadata_structure** => CACHE 
-	* key:string 
-	* title:string 
+	* medium_id:integer:required
+	* key:string:required
+	* value:string:required
+* **Metadata_structure** => CACHE
+	* key:string:required
+	* title:string:required
+	* metadata_tab_id:integer
+* **Metadata_tab** => CACHE
+	* title:string:required
 * **Technical**
-	* medium_id:integer 
-	* key:string 
-	* value:string
-* **Technical_structure** => CACHE 
-	* key:string 
-	* title:string 
+	* medium_id:integer:required
+	* key:string:required
+	* value:string:required
+* **Technical_structure** => CACHE
+	* key:string:required
+	* title:string:required
 * **Comment**
-	* user_id:integer 
-	* medium_id:integer 
-	* content:text
+	* user_id:integer:required
+	* medium_id:integer:required
+	* content:text:required
 * **User** => CACHE
-	* GENERATE FROM DEVISE 
-	* user_groupe_id:integer
+	* GENERATE FROM DEVISE
+	* user_groupe_id:integer:required
 * **User_right** => CACHE
-	* user_id:integer
+	* user_id:integer:required
 	* folder_id:integer
-	* key:string 
-	* value:string 
+	* key:string:required
+	* value:string:required
 * **User_group**
-	* title:string
+	* title:string:required
 * **User_group_right** => CACHE
-	* user_group_id:integer
+	* user_group_id:integer:required
 	* folder_id:integer
-	* key:string 
-	* value:string 
+	* key:string:required
+	* value:string:required
 
 ## Users rights settings
 - User_right settings overwrite the User_group_right settings
