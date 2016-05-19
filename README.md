@@ -1,5 +1,5 @@
 ## MEMO
-Rails version ? 
+Rails version :
 - Use **Mongoid** for SQL
 - Use **Redis** for NOSQL Resque and cache
 - Use **Elasticsearch** ... you know, for search. Maybe with **Chewy** ?
@@ -15,9 +15,9 @@ Rails version ?
 - Use **Grape** for webservices : https://github.com/intridea/grape
 - Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text 
  
-Maybe switch to SailsJS ? 
+SailsJS version
 - Use **Mongodb** for SQL
-- Use **Redis** for NOSQL Resque and cache
+- Use **Redis** for NOSQL Kue / cache / SocketIO
 - Use **Elasticsearch** ... you know, for search. Maybe with **Chewy** ?
 - Use **Kue** for joblist and cron
 - Use **Mediainfo** for metadata
