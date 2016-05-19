@@ -96,61 +96,118 @@ storage_path | string | true
 folder_id | integer | true
 
 * **Export_Workflow** => CACHE
-	* title:string:required
-	* active:boolean:required
-	* folder_id:integer:required
-	* storage_path:string:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+active | boolean | true
+folder_id | integer | true
+storage_path | string | true
+
 * **Purge_Workflow** => CACHE
-	* title:string:required
-	* active:boolean:required
-	* recursive:boolean:required
-	* folder_id:integer:required
-	* day_offset:integer:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+active | boolean | true
+recursive | boolean | true
+folder_id | integer | true
+day_offset | integer | true
+
+
+
 * **Archive_Workflow** => CACHE
-	* title:string:required
-	* active:boolean:required
-	* recursive:boolean:required
-	* folder_id:integer:required
-	* day_offset:integer:required
+	
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+active | boolean | true
+recursive | boolean | true
+folder_id | integer | true
+day_offset | integer | true
+
 * **Setting** => CACHE
-	* key:string:required
-	* value:string:required
+
+Title | Type | Required
+--- | --- | ---	
+key | string | true
+value | string | true
+
 * **Metadata** 
-	* medium_id:integer:required
-	* key:string:required
-	* value:string:required
+
+Title | Type | Required
+--- | --- | ---	
+medium_id | integer | true
+key | string | true
+value | string | true
+
 * **Metadata_structure** => CACHE
-	* key:string:required
-	* title:string:required
-	* metadata_tab_id:integer
+
+Title | Type | Required
+--- | --- | ---	
+key | string | true
+title | string | true
+metadata_tab_id | integer | false	
+
 * **Metadata_tab** => CACHE
-	* title:string:required
+	
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+
 * **Technical**
-	* medium_id:integer:required
-	* key:string:required
-	* value:string:required
+	
+Title | Type | Required
+--- | --- | ---	
+medium_id | integer | true
+key | string | true
+value | string | true
+
 * **Technical_structure** => CACHE
-	* key:string:required
-	* title:string:required
+	
+Title | Type | Required
+--- | --- | ---	
+key | string | true
+title | string | true
+
 * **Comment**
-	* user_id:integer:required
-	* medium_id:integer:required
-	* content:text:required
+
+Title | Type | Required
+--- | --- | ---	
+user_id | integer | true
+medium_id | integer | true
+content | text | true
+
 * **User** => CACHE
-	* GENERATE FROM DEVISE
-	* user_groupe_id:integer:required
+	
+Title | Type | Required
+--- | --- | ---	
+GENERATE FROM DEVISE | X | X
+user_groupe_id | integer | true
+
 * **User_right** => CACHE
-	* user_id:integer:required
-	* folder_id:integer
-	* key:string:required
-	* value:string:required
+
+Title | Type | Required
+--- | --- | ---	
+user_id | integer | true
+folder_id | integer | false
+key | string | true
+value | string | true
+
 * **User_group**
-	* title:string:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true	
+
 * **User_group_right** => CACHE
-	* user_group_id:integer:required
-	* folder_id:integer
-	* key:string:required
-	* value:string:required
+
+Title | Type | Required
+--- | --- | ---	
+title | integer | true
+folder_id | integer | false
+key | string | true
+value | string | true
 
 ## Users rights settings
 - User_right settings overwrite the User_group_right settings
