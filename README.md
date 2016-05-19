@@ -29,40 +29,72 @@ Maybe switch to SailsJS ?
 
 ## Database
 * **Media** 
-	* title:string:required
-	* sort_id:integer:required
-	* state_id:integer:required
-	* tag_id:array
-	* created_by:integer:required 
-	* updated_by:integer:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+sort_id | integer | true
+state_id | integer | true
+tag_id | array | false
+created_by | integer | true
+updated_by | integer | true
+
 * **Link**
-	* medium_id:integer:required
-	* folder_id:integer:required
+
+Title | Type | Required
+--- | --- | ---	
+medium_id | integer | true
+folder_id | integer | true
+
 * **Object**
-	* medium_id:integre:required
-	* file_name:string:required
+
+Title | Type | Required
+--- | --- | ---	
+medium_id | integer | true
+file_name | string | true
+
 * **State** => CACHE
-	* title:string:required
-	* bg_color:string:required
-	* bd_color:string:required
-	* tx_color:string:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+bg_color | string | true
+bd_color | string | true
+tx_color | string | true
+
 * **Sort** => CACHE
-	* title:string:required
-	* icon:string:required
-	* extension:array:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+icon | string | true
+extension | array | true
+
 * **Folder** => CACHE
-	* title:string:required
-	* parent_id:integer:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+parent_id | integer | true
+
 * **Tag** => CACHE
-	* title:string:required
-	* bg_color:string:required
-	* bd_color:string:required
-	* tx_color:string:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+bg_color | string | true
+bd_color | string | true
+tx_color | string | true
+
 * **Import_Workflow** => CACHE
-	* title:string:required
-	* active:boolean:required
-	* storage_path:string:required
-	* folder_id:integer:required
+
+Title | Type | Required
+--- | --- | ---	
+title | string | true
+active | boolean | true
+storage_path | string | true
+folder_id | integer | true
+
 * **Export_Workflow** => CACHE
 	* title:string:required
 	* active:boolean:required
