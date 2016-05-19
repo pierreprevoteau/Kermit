@@ -99,12 +99,21 @@ Maybe switch to SailsJS ?
 * **User** => CACHE
 	* GENERATE FROM DEVISE 
 	* user_groupe_id:integer
+* **User_right** => CACHE
+	* user_id:integer
+	* folder_id:integer
+	* key:string 
+	* value:string 
 * **User_group**
 	* title:string
 * **User_group_right** => CACHE
 	* user_group_id:integer
 	* folder_id:integer
-	* key:string value:string 
+	* key:string 
+	* value:string 
+
+## Users rights settings
+- User_right settings overwrite the User_group_right settings
 
 ## Onsite storage
 - Use a network storage mounted with NFS. With 26 letters we can reach 26 000 000 assets. Path look like :
