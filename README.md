@@ -25,6 +25,8 @@ Maybe switch to SailsJS ?
 - Use **MP4BOX** for dash
 - Use **IBMWatson** or **NuanceDev** or **Authot** for Speech to Text 
 
+----------------
+
 ## Database
 * **Media** 
 	* title:string:required
