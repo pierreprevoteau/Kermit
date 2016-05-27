@@ -30,6 +30,8 @@ SailsJS/AngularJS version
 ## Database
 * **Media** 
 
+media_id match objects_id in the storage so that we don't need to store a path in DB.
+
 Title | Type | Required
 --- | --- | ---	
 title | string | true
@@ -40,6 +42,8 @@ created_by | integer | true
 updated_by | integer | true
 
 * **Link**
+ 
+A link refer to a media, links are stored in folders so that a media can be in two folder without the need to duplicate objects of the Media.
 
 Title | Type | Required
 --- | --- | ---	
@@ -47,23 +51,30 @@ medium_id | integer | true
 folder_id | integer | true
 
 * **Object**
+ 
+An object is an associeted file to a medium (HR, LR, SRC, Thumb, alternative_res, metadata_file ...). Each are hashed to check concistency problem.
 
 Title | Type | Required
 --- | --- | ---	
 medium_id | integer | true
 file_name | string | true
-hash | string | true
+hash | string | false
+archived | boolean | true
 
 * **State** => CACHE
+
+State of a media (online, offline, partial, archived ...) and associeted color.
 
 Title | Type | Required
 --- | --- | ---	
 title | string | true
-bg_color | string | true
-bd_color | string | true
-tx_color | string | true
+bg_color | string | false
+bd_color | string | false
+tx_color | string | false
 
 * **Sort** => CACHE
+
+Sort of a media (video, audio, project, image ...), associeted icon (from glyphicon/fontawsome in SVG) and whitelist extentions.
 
 Title | Type | Required
 --- | --- | ---	
@@ -73,12 +84,19 @@ extension | array | true
 
 * **Folder** => CACHE
 
+Database folder where Medias are stored, in reality it store links who refer to medias.
+
 Title | Type | Required
 --- | --- | ---	
 title | string | true
 parent_id | integer | true
 
+TODO : Add folder bg/bd/tx_color
+
 * **Tag** => CACHE
+
+Tags are metadatas associeted to a media who look likes AGENCY/RUSH/BADSHOT.
+One media can have multiple tags.
 
 Title | Type | Required
 --- | --- | ---	
@@ -115,8 +133,6 @@ recursive | boolean | true
 folder_id | integer | true
 day_offset | integer | true
 
-
-
 * **Archive_Workflow** => CACHE
 	
 Title | Type | Required
@@ -134,7 +150,11 @@ Title | Type | Required
 key | string | true
 value | string | true
 
+TODO : 
+
 * **Metadata** 
+
+Redactional metadata (journalist/GPS/cameraman) KEY (CAMERAMAN) VALUE (Toto BERANGER)
 
 Title | Type | Required
 --- | --- | ---	
@@ -144,19 +164,28 @@ value | string | true
 
 * **Metadata_structure** => CACHE
 
+Title of a metadata KEY (CAMERAMAN) TITLE (Nom du cameraman).
+metadata_tab_id is used to organize metadata in tabs.
+
 Title | Type | Required
 --- | --- | ---	
 key | string | true
 title | string | true
-metadata_tab_id | integer | false	
+metadata_tab_id | integer | false
 
 * **Metadata_tab** => CACHE
-	
+
+Title of metadata tab used to organise metadata
+
 Title | Type | Required
 --- | --- | ---	
 title | string | true
 
+TODO : Add Metadata_tab bg/bd/tx_color
+
 * **Technical**
+
+Technical Metadata (Duration/Format) like Metadata
 	
 Title | Type | Required
 --- | --- | ---	
@@ -165,13 +194,17 @@ key | string | true
 value | string | true
 
 * **Technical_structure** => CACHE
-	
+
+Like Metadata
+
 Title | Type | Required
 --- | --- | ---	
 key | string | true
 title | string | true
 
 * **Comment**
+
+Comment associeted to a Media from a user or from the server (history of the media, moved for folder, duplicated, archived)
 
 Title | Type | Required
 --- | --- | ---	
