@@ -247,6 +247,9 @@ One private bucket per Kermit instance.
 - concistancy_checker
 - thumb_creator
 - duration_creator
+- hr_creator
+- lr_creator
+- object_creator
 - workflow_importer
 - workflow_exporter
 - workflow_purger
