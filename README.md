@@ -52,6 +52,7 @@ Title | Type | Required
 --- | --- | ---	
 medium_id | integer | true
 file_name | string | true
+hash | string | true
 
 * **State** => CACHE
 
