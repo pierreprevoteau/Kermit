@@ -66,10 +66,13 @@ archived | boolean | true
 
 * **Object_type** => CACHE
 
+Object type (HR/LR/PROJ/THUMB) with prefix (before the id in the filename) and whitelist extentions.
+
 Title | Type | Required
 --- | --- | ---	
 title | string | true
 prefix | string | true
+extension | array | true
 
 * **State** => CACHE
 
@@ -317,11 +320,14 @@ One private bucket per Kermit instance.
 - workflow
 
 ## Objects and Filename
-- LR_1115.mpg => Lowres
-- HR_1115.mxf => Hires
+- LR_1115.mpg => Low res
+- HR_1115.mxf => Hi res
+- SRC_1115.mxf => Source res
 - MD_1115.xml => Metadata
 - MT_1115.xml => Technical
 - TH_1115.jpg => MainThumbnail
 - TH1_1115.jpg => SceneThumbnails
 - TH2_1115.jpg => SceneThumbnails
 - ST_1115.srt => Subtitle
+- DIFF_1115.mxf => Alternative res
+- PROJ_1115.avp => Projet montage
