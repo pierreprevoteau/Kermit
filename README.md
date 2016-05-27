@@ -331,3 +331,11 @@ One private bucket per Kermit instance.
 - ST_1115.srt => Subtitle
 - DIFF_1115.mxf => Alternative res
 - PROJ_1115.avp => Projet montage
+
+## Component
+- Frontend
+- Backend
+- Worker
+- Mongo
+- Redis
+- ElasticSearch
