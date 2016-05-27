@@ -59,7 +59,7 @@ An object is an associeted file to a medium (HR, LR, SRC, Thumb, alternative_res
 Title | Type | Required
 --- | --- | ---	
 medium_id | integer | true
-object_type | integer | true
+object_type_id | integer | true
 file_name | string | true
 hash | string | false
 archived | boolean | true
