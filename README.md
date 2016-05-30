@@ -163,7 +163,7 @@ Title | Type | Required
 key | string | true
 value | string | true
 
-TODO : 
+TODO : add optional folder_id/wf_id/...
 
 * **Metadata** 
 
