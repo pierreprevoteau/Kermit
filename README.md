@@ -256,6 +256,17 @@ folder_id | integer | false
 key | string | true
 value | string | true
 
+* **Locator**
+
+Title | Type | Required
+--- | --- | ---	
+medium_id | integer | true
+timecode | string | true
+title | string | true
+bg_color | string | true
+bd_color | string | true
+tx_color | string | true
+
 ## Users rights settings
 - User_right settings overwrite the User_group_right settings
 
