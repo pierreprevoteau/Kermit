@@ -34,14 +34,14 @@ SailsJS/AngularJS version
 
 media_id match objects_id in the storage so that we don't need to store a path in DB.
 
-Title | Type | Required
---- | --- | ---	
-title | string | true
-sort_id | integer | true
-state_id | integer | true
-tag_id | array | false
-created_by | integer | true
-updated_by | integer | true
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
+title | string | true | "Visite Holland London" | Title of a media
+sort_id | integer | true | "1" | Sort id, refer to the Sort model, can be a Video/Audio/Image/Project...
+state_id | integer | true | "2" | State id, refer to the State model, can be Online/Offline/Partial/Archived...
+tag_id | array | false | "2:5:8:12" | Tag ids, refer to the Tag model, can be multiple Agency/Rush/Badshoot...
+created_by | integer | true | "15" | User id, refer to the User model, User who create the Media
+updated_by | integer | true | "16" | User id, refer to the User model, last User who update the Media
 
 * **Link**
  
