@@ -63,6 +63,7 @@ object_type_id | integer | true
 file_name | string | true
 hash | string | false
 archived | boolean | true
+status | string | true
 
 * **Object_type** => CACHE
 
