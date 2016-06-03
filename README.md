@@ -69,8 +69,8 @@ status | string | true
 
 Object type (HR/LR/PROJ/THUMB) with prefix (before the id in the filename) and whitelist extentions.
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 prefix | string | true
 extension | array | true
@@ -79,8 +79,8 @@ extension | array | true
 
 State of a media (online, offline, partial, archived ...) and associeted color.
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 bg_color | string | false
 bd_color | string | false
@@ -90,8 +90,8 @@ tx_color | string | false
 
 Sort of a media (video, audio, project, image ...), associeted icon (from glyphicon/fontawsome in SVG) and whitelist extentions.
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 icon | string | true
 extension | array | true
@@ -100,8 +100,8 @@ extension | array | true
 
 Database folder where Medias are stored, in reality it store links who refer to medias.
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 parent_id | integer | true
 
@@ -112,8 +112,8 @@ TODO : Add folder bg/bd/tx_color
 Tags are metadatas associeted to a media who look likes AGENCY/RUSH/BADSHOT.
 One media can have multiple tags.
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 bg_color | string | true
 bd_color | string | true
@@ -121,8 +121,8 @@ tx_color | string | true
 
 * **Import_Workflow** => CACHE
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 active | boolean | true
 storage_path | string | true
@@ -130,8 +130,8 @@ folder_id | integer | true
 
 * **Export_Workflow** => CACHE
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 active | boolean | true
 folder_id | integer | true
@@ -139,8 +139,8 @@ storage_path | string | true
 
 * **Purge_Workflow** => CACHE
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 active | boolean | true
 recursive | boolean | true
@@ -149,8 +149,8 @@ day_offset | integer | true
 
 * **Archive_Workflow** => CACHE
 	
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 active | boolean | true
 recursive | boolean | true
@@ -159,8 +159,8 @@ day_offset | integer | true
 
 * **Setting** => CACHE
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 key | string | true
 value | string | true
 
@@ -170,8 +170,8 @@ TODO : add optional folder_id/wf_id/...
 
 Redactional metadata (journalist/GPS/cameraman) KEY (CAMERAMAN) VALUE (Toto BERANGER)
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 medium_id | integer | true
 key | string | true
 value | string | true
@@ -181,8 +181,8 @@ value | string | true
 Title of a metadata KEY (CAMERAMAN) TITLE (Nom du cameraman).
 metadata_tab_id is used to organize metadata in tabs.
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 key | string | true
 title | string | true
 metadata_tab_id | integer | false
@@ -191,8 +191,8 @@ metadata_tab_id | integer | false
 
 Title of metadata tab used to organise metadata
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true
 
 TODO : Add Metadata_tab bg/bd/tx_color
@@ -201,8 +201,8 @@ TODO : Add Metadata_tab bg/bd/tx_color
 
 Technical Metadata (Duration/Format) like Metadata
 	
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 medium_id | integer | true
 key | string | true
 value | string | true
@@ -211,8 +211,8 @@ value | string | true
 
 Like Metadata
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 key | string | true
 title | string | true
 
@@ -220,23 +220,23 @@ title | string | true
 
 Comment associeted to a Media from a user or from the server (history of the media, moved for folder, duplicated, archived)
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 user_id | integer | true
 medium_id | integer | true
 content | text | true
 
 * **User** => CACHE
 	
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 GENERATE FROM DEVISE | X | X
 user_groupe_id | integer | true
 
 * **User_right** => CACHE
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 user_id | integer | true
 folder_id | integer | false
 key | string | true
@@ -244,14 +244,14 @@ value | string | true
 
 * **User_group**
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 title | string | true	
 
 * **User_group_right** => CACHE
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 user_group_id | integer | true
 folder_id | integer | false
 key | string | true
@@ -259,8 +259,8 @@ value | string | true
 
 * **Locator**
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 medium_id | integer | true
 timecode | string | true
 title | string | true
