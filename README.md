@@ -47,17 +47,17 @@ updated_by | integer | true | "16" | User id, refer to the User model, last User
  
 A link refer to a media, links are stored in folders so that a media can be in two folder without the need to duplicate objects of the Media.
 
-Title | Type | Required
---- | --- | ---	
-medium_id | integer | true
-folder_id | integer | true
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
+medium_id | integer | true | "12" | Medium id, refer to the Medium model
+folder_id | integer | true | "3" | Folder id, refer to the Folder model
 
 * **Object**
  
 An object is an associeted file to a medium (HR, LR, SRC, Thumb, alternative_res, metadata_file ...). Each are hashed to check concistency problem.
 
-Title | Type | Required
---- | --- | ---	
+Title | Type | Required | Example | Info
+--- | --- | ---	| --- | ---
 medium_id | integer | true
 object_type_id | integer | true
 file_name | string | true
