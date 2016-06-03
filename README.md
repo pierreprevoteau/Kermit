@@ -59,11 +59,10 @@ An object is an associeted file to a medium (HR, LR, SRC, Thumb, alternative_res
 Title | Type | Required | Example | Info
 --- | --- | ---	| --- | ---
 medium_id | integer | true | "5" | Medium id, refer to the Medium model
-object_type_id | integer | true
-file_name | string | true
-hash | string | false
-archived | boolean | true
-status | string | true
+object_type_id | integer | true | "7" | Refer to the Object_type model
+file_name | string | true | "THB_1554.jpg" | Filename with extention of the file in the storage
+hash | string | false | "df5gd4dfg6df8df52dfg987js32" | Hash of the file
+status | string | true | "online" | Status of the file, "online" if the file is present, "offline" if not, or "archived" if file not present in the storage but is in Backblaze
 
 * **Object_type** => CACHE
 
@@ -71,9 +70,9 @@ Object type (HR/LR/PROJ/THUMB) with prefix (before the id in the filename) and w
 
 Title | Type | Required | Example | Info
 --- | --- | ---	| --- | ---
-title | string | true
-prefix | string | true
-extension | array | true
+title | string | true | "Video HR" |
+prefix | string | true | "HR" |
+extension | array | true | "mxf:mov" |
 
 * **State** => CACHE
 
